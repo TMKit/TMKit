@@ -1,0 +1,22 @@
+{
+  "name": "TMKit",
+  "version": "0.1.0",
+  "summary": "A short description of TMKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Teemo/TMKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Teemo": "cjianneng@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/Teemo/TMKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TMKit/Classes/**/*"
+}

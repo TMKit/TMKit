@@ -1,0 +1,6 @@
+framework module TMKit {
+  umbrella header "TMKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

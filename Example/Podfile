@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TMKit_Example' do
+  pod 'TMKit', :path => '../'
+
+  target 'TMKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
