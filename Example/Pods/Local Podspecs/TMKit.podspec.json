@@ -18,5 +18,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "TMKit/Classes/**/*"
+  "source_files": "Classes/**/*"
 }

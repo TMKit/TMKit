@@ -7,6 +7,7 @@
 //
 
 #import "TMKitViewController.h"
+#import <TMKit/PPDebug.h>
 
 @interface TMKitViewController ()
 
@@ -17,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    DLog(@"12312");
 }
 
 - (void)didReceiveMemoryWarning
