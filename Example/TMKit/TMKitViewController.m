@@ -7,7 +7,7 @@
 //
 
 #import "TMKitViewController.h"
-#import <TMKit/PPDebug.h>
+#import <TMKit/TMLogUtil.h>
 
 @interface TMKitViewController ()
 
@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    DLog(@"12312");
+    TMLog(@"12312");
 }
 
 - (void)didReceiveMemoryWarning

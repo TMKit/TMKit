@@ -7,7 +7,7 @@
 //
 
 #import "FileUtil.h"
-#import "LogUtil.h"
+#import "TMLogUtil.h"
 
 
 
@@ -23,7 +23,7 @@
     if (![[NSFileManager defaultManager] fileExistsAtPath:fullPath]) {
         
         // Directory does not exist so create it
-        DLog(@"create dir = %@", fullPath);
+        TMLog(@"create dir = %@", fullPath);
 
         NSError* error = nil;
         BOOL result = [[NSFileManager defaultManager] createDirectoryAtPath:fullPath withIntermediateDirectories:YES attributes:nil error:&error];
@@ -146,11 +146,11 @@
 + (BOOL)removeFile:(NSString *)fullPath
 {
     if ([fullPath length] == 0){
-        DLog(@"<removeFile> but %@ is nil or empty", fullPath);
+        TMLog(@"<removeFile> but %@ is nil or empty", fullPath);
         return NO;
     }
     
-    DLog(@"<removeFile> %@", fullPath);
+    TMLog(@"<removeFile> %@", fullPath);
     NSFileManager *fileManager = [NSFileManager defaultManager];
     return [fileManager removeItemAtPath:fullPath error:nil];
 }
@@ -158,21 +158,21 @@
 + (NSInteger)numberOfFilesBelowDir:(NSString *)fullDirPath
 {
     if ([fullDirPath length] == 0) {
-        DLog(@"warnning<numberOfFilesBelowDir>: parameter is illegal,dir = %@",fullDirPath);
+        TMLog(@"warnning<numberOfFilesBelowDir>: parameter is illegal,dir = %@",fullDirPath);
         return 0;
     }
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isDir = NO;
     if ([fileManager fileExistsAtPath:fullDirPath isDirectory:&isDir]) {
         if (!isDir) {
-            DLog(@"warnning:<numberOfFilesBelowDir> %@ is not a directory",fullDirPath);
+            TMLog(@"warnning:<numberOfFilesBelowDir> %@ is not a directory",fullDirPath);
             return 0;
         }
         //delete the files.
         NSArray *fileList = [fileManager contentsOfDirectoryAtPath:fullDirPath error:nil];
         return [fileList count];
     }
-    DLog(@"warnning:<numberOfFilesBelowDir> %@  not exists!",fullDirPath);
+    TMLog(@"warnning:<numberOfFilesBelowDir> %@  not exists!",fullDirPath);
     return NO;
 
 }
@@ -181,14 +181,14 @@
            timeIntervalSinceNow:(NSTimeInterval)timeInterval
 {
     if ([fullDirPath length] == 0) {
-        DLog(@"warnning<removeFilesBelowDir>: parameter is illegal,dir = %@, date = %f",fullDirPath, timeInterval);
+        TMLog(@"warnning<removeFilesBelowDir>: parameter is illegal,dir = %@, date = %f",fullDirPath, timeInterval);
         return NO;
     }
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isDir = NO;
     if ([fileManager fileExistsAtPath:fullDirPath isDirectory:&isDir]) {
         if (!isDir) {
-            DLog(@"warnning:<removeFilesBelowDir> %@ is not a directory",fullDirPath);
+            TMLog(@"warnning:<removeFilesBelowDir> %@ is not a directory",fullDirPath);
             return NO;
         }
         //delete the files.
@@ -200,14 +200,14 @@
                 NSDate *modifyDate = [attr objectForKey:NSFileModificationDate];
                 NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:modifyDate];
                 if (interval >= timeInterval) {
-                    DLog(@"remove the file = %@, modify date = %@", filePath,modifyDate);
+                    TMLog(@"remove the file = %@, modify date = %@", filePath,modifyDate);
                     [FileUtil removeFile:filePath];
                 }
             }
         }
         return YES;
     }
-    DLog(@"warnning:<removeFilesBelowDir> %@  not exists!",fullDirPath);
+    TMLog(@"warnning:<removeFilesBelowDir> %@  not exists!",fullDirPath);
     return NO;
 }
 
@@ -219,7 +219,7 @@
     BOOL isDir = NO;
     if ([fileManager fileExistsAtPath:fullDirPath isDirectory:&isDir]) {
         if (!isDir) {
-            DLog(@"warnning:<removeFilesBelowDir> %@ is not a directory",fullDirPath);
+            TMLog(@"warnning:<removeFilesBelowDir> %@ is not a directory",fullDirPath);
             return nil;
         }
         //delete the files.
@@ -425,7 +425,7 @@
 {
     BOOL isDir;
     BOOL exist = [[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDir];
-    DLog(@"<isPathExist> path(%@) isDir(%d) exist(%d)", path, isDir, exist);
+    TMLog(@"<isPathExist> path(%@) isDir(%d) exist(%d)", path, isDir, exist);
     return exist;
 }
 

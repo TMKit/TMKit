@@ -1,23 +1,23 @@
 //
-//  LogUtil.m
-//  three20test
+//  TMLogUtil.m
+//  Pods
 //
-//  Created by qqn_pipi on 10-3-30.
-//  Copyright 2010 QQN-PIPI.com. All rights reserved.
+//  Created by Teemo on 18/05/2017.
+//
 //
 
-#import "LogUtil.h"
+#import "TMLogUtil.h"
 
-@implementation LogUtil
+@implementation TMLogUtil
 
 + (void)startLog:(NSString*)string
 {
-	NSLog(@"************************** Start %@ **************************", string);
+    NSLog(@"************************** Start %@ **************************", string);
 }
 
 + (void)stopLog:(NSString*)string
 {
-	NSLog(@"************************** End %@ **************************", string);
+    NSLog(@"************************** End %@ ****************************", string);
 }
 
 + (void)output:(const char*)fileName lineNumber:(int)lineNumber function:(const char*)function input:(NSString*)input, ...
@@ -28,19 +28,13 @@
     // Build the path string
     filePath = [[NSString alloc] initWithBytes:fileName length:strlen(fileName)
                                       encoding:NSUTF8StringEncoding];
-    
     // Process arguments, resulting in a format string
     va_start(argList, input);
     formatStr = [[NSString alloc] initWithFormat:input arguments:argList];
     va_end(argList);
     
-    // Call NSLog, prepending the filename and line number
-//    NSLog(@"%@ [%d] %s %@", [filePath lastPathComponent], lineNumber, function, formatStr);
-
     NSLog(@"%@[%d] %s %@", [filePath lastPathComponent], lineNumber, function, formatStr);
-
-//    CFShow([NSString stringWithFormat:@"%@[%d] %@", [filePath lastPathComponent], lineNumber, formatStr]);
-
+    
 }
 
 + (void)output:(const char*)fileName lineNumber:(int)lineNumber input:(NSString*)input, ...
@@ -51,19 +45,14 @@
     // Build the path string
     filePath = [[NSString alloc] initWithBytes:fileName length:strlen(fileName)
                                       encoding:NSUTF8StringEncoding];
-    
     // Process arguments, resulting in a format string
     va_start(argList, input);
     formatStr = [[NSString alloc] initWithFormat:input arguments:argList];
     va_end(argList);
     
-    // Call NSLog, prepending the filename and line number
-    //    NSLog(@"%@ [%d] %s %@", [filePath lastPathComponent], lineNumber, function, formatStr);
-    
-    NSLog(@"%@[%d] %@", [filePath lastPathComponent], lineNumber, formatStr);
-    
-    //    CFShow([NSString stringWithFormat:@"%@[%d] %@", [filePath lastPathComponent], lineNumber, formatStr]);
-    
+    NSLog(@"class: %@ [line : %d] %@", [filePath lastPathComponent], lineNumber, formatStr);
 
 }
+
+
 @end
