@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/TMKit.svg?style=flat)](http://cocoapods.org/pods/TMKit)
 [![License](https://img.shields.io/cocoapods/l/TMKit.svg?style=flat)](http://cocoapods.org/pods/TMKit)
 [![Platform](https://img.shields.io/cocoapods/p/TMKit.svg?style=flat)](http://cocoapods.org/pods/TMKit)
-
+![avatar](https://avatars1.githubusercontent.com/u/28727841?v=3&s=600)
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
