@@ -12,6 +12,10 @@
 #define TMKit_h
 
 #import "TMLogUtil.h"
+#import "TMVersionUtil.h"
+
+//=============Category============
 #import "NSString+TMEncrypt.h"
+#import "NSDate+TMUtil.h"
 
 #endif /* TMKit_h */
