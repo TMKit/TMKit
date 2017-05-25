@@ -17,5 +17,7 @@
 //=============Category============
 #import "NSString+TMEncrypt.h"
 #import "NSDate+TMUtil.h"
+#import "NSData+TMUtil.h"
+#import "NSString+TMUtil.h"
 
 #endif /* TMKit_h */
