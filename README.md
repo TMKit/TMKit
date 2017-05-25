@@ -8,11 +8,19 @@
 
 
 ![avatar](https://avatars1.githubusercontent.com/u/28727841?v=3&s=600)
+
+##Features
+
+- [x] simple API
+- [x] more powerful method
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+iOS - 6.0
 
 ## Installation
 
