@@ -1,10 +1,9 @@
 # TMKit
 
-[![CI Status](http://img.shields.io/travis/Teemo/TMKit.svg?style=flat)](https://travis-ci.org/Teemo/TMKit)
+[![CI Status](https://img.shields.io/travis/rust-lang/rust.svg)](http://cocoapods.org/pods/TMKit)
 [![Version](https://img.shields.io/cocoapods/v/TMKit.svg?style=flat)](http://cocoapods.org/pods/TMKit)
-[![License](https://img.shields.io/cocoapods/l/TMKit.svg?style=flat)](http://cocoapods.org/pods/TMKit)
-[![Platform](https://img.shields.io/cocoapods/p/TMKit.svg?style=flat)](http://cocoapods.org/pods/TMKit)
-
+[![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](http://cocoapods.org/pods/TMKit)
+[![Support](https://img.shields.io/badge/support-ios8%2B-orange.svg)](https://www.apple.com/nl/ios/)
 
 
 ![avatar](https://avatars1.githubusercontent.com/u/28727841?v=3&s=600)
@@ -20,7 +19,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-iOS - 6.0
+iOS - 8.0
 
 ## Installation
 
