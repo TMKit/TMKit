@@ -3,12 +3,6 @@
 <p align="center">
   <img src="https://avatars1.githubusercontent.com/u/28727841?v=3&s=600" width=434 />
 </p>
-<!-- [![CI Status](https://img.shields.io/travis/rust-lang/rust.svg)](http://cocoapods.org/pods/TMKit)
-[![Version](https://img.shields.io/cocoapods/v/TMKit.svg?style=flat)](http://cocoapods.org/pods/TMKit)
-[![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/TMKit/TMKit/blob/master/LICENSE)
-[![Support](https://img.shields.io/badge/support-ios8%2B-orange.svg)](https://www.apple.com/nl/ios/)
-
- -->
 
 <p align="center">
     <a href="http://cocoapods.org/pods/TMKit)">
