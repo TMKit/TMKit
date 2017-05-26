@@ -1,7 +1,7 @@
 # TMKit
 
 <p align="center">
-  <img src="https://avatars1.githubusercontent.com/u/28727841?v=3&s=300" width=300 />
+  <img src="https://avatars1.githubusercontent.com/u/28727841?v=3&s=225" width=225 />
 </p>
 
 <p align="center">
