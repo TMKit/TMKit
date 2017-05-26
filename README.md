@@ -15,7 +15,7 @@
         <img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="License">
     </a>
     <a href="https://www.apple.com/nl/ios/">
-        <img src="https://img.shields.io/badge/support-ios8+-red.svg)" alt="Platform">
+        <img src="https://img.shields.io/badge/support-ios8-red.svg)" alt="Platform">
     </a>
 </p>
 
