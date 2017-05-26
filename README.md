@@ -1,7 +1,7 @@
 # TMKit
 
 <p align="center">
-  <img src="https://avatars1.githubusercontent.com/u/28727841?v=3&s=600" width=334 />
+  <img src="https://avatars1.githubusercontent.com/u/28727841?v=3&s=334" width=334 />
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
         <img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="License">
     </a>
     <a href="https://www.apple.com/nl/ios/">
-        <img src="https://img.shields.io/badge/support-ios8%2B-orange.svg)" alt="Platform">
+        <img src="https://img.shields.io/badge/support-ios8+-red.svg)" alt="Platform">
     </a>
 </p>
 
