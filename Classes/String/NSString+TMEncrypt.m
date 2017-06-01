@@ -9,151 +9,109 @@
 #import "NSString+TMEncrypt.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
+#import "NSData+TMEncrypt.h"
 
 @implementation NSString (TMEncrypt)
 
--(NSString *) tm_MD5{
-    const char *cStr = [self UTF8String];
-    unsigned char digest[CC_MD5_DIGEST_LENGTH];
-    
-    CC_MD5(cStr,(CC_LONG) strlen(cStr), digest);
-    
-    NSMutableString *result = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
-        [result appendFormat:@"%02x", digest[i]];
-    }
-    
-    return result;
-}
 
--(NSString *) tm_SHA1{
+
+- (NSString *)tm_MD2String{
     const char *cstr = [self UTF8String];
     NSData *data = [NSData dataWithBytes:cstr length:self.length];
-    
-    uint8_t digest[CC_SHA1_DIGEST_LENGTH];
-    
-    CC_SHA1(data.bytes, (CC_LONG) data.length, digest);
-    
-    NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++){
-        [output appendFormat:@"%02x", digest[i]];
-    }
-    return output;
+    return [data tm_MD2String];
 }
 
--(NSString *) tm_SHA224{
+- (NSData *)tm_MD2Data{
     const char *cstr = [self UTF8String];
     NSData *data = [NSData dataWithBytes:cstr length:self.length];
-    
-    uint8_t digest[CC_SHA224_DIGEST_LENGTH];
-    CC_SHA224(data.bytes, (CC_LONG)data.length, digest);
-    
-    NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA224_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_SHA224_DIGEST_LENGTH; i++){
-        [output appendFormat:@"%02x", digest[i]];
-    }
-    return output;
+    return [data tm_MD2Data];
 }
 
--(NSString *) tm_SHA256{
+- (NSString *)tm_MD4String{
     const char *cstr = [self UTF8String];
     NSData *data = [NSData dataWithBytes:cstr length:self.length];
-    
-    uint8_t digest[CC_SHA256_DIGEST_LENGTH];
-    
-    CC_SHA256(data.bytes,(CC_LONG)data.length, digest);
-    
-    NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA256_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_SHA256_DIGEST_LENGTH; i++){
-        [output appendFormat:@"%02x", digest[i]];
-    }
-    return output;
+    return [data tm_MD4String];
 }
 
--(NSString *) tm_SHA384{
+- (NSData *)tm_MD4Data{
     const char *cstr = [self UTF8String];
     NSData *data = [NSData dataWithBytes:cstr length:self.length];
-    
-    uint8_t digest[CC_SHA384_DIGEST_LENGTH];
-    
-    CC_SHA384(data.bytes, (CC_LONG)data.length, digest);
-    
-    NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA384_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_SHA384_DIGEST_LENGTH; i++){
-        [output appendFormat:@"%02x", digest[i]];
-    }
-    return output;
+    return [data tm_MD4Data];
 }
 
--(NSString *) tm_SHA512{
+-(NSString *) tm_MD5String{
     const char *cstr = [self UTF8String];
     NSData *data = [NSData dataWithBytes:cstr length:self.length];
-    
-    uint8_t digest[CC_SHA512_DIGEST_LENGTH];
-    CC_SHA512(data.bytes, (CC_LONG)data.length, digest);
-    
-    NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA512_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_SHA512_DIGEST_LENGTH; i++){
-        [output appendFormat:@"%02x", digest[i]];
-    }
-    return output;
+    return [data tm_MD5String];
+}
+
+-(NSString *) tm_SHA1String{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    return [data tm_SHA1String];
+}
+
+-(NSString *) tm_SHA224String{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    return [data tm_SHA224String];
+}
+
+-(NSString *) tm_SHA256String{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    return [data tm_SHA256String];
+}
+
+-(NSString *) tm_SHA384String{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+   return [data tm_SHA384String];
+}
+
+-(NSString *) tm_SHA512String{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    return [data tm_SHA512String];
 }
 
 
--(NSString *) tm_MD5WithSalt:(NSString *)salt{
-    if (!salt) {
-        return nil;
-    }
-    NSString *newString = [self stringByAppendingString:salt];
-    return [newString tm_MD5];
+-(NSData *) tm_MD5Data{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    return [data tm_MD5Data];
 }
 
-
--(NSString *) tm_SHA1WithSalt:(NSString *)salt{
-    if (!salt) {
-        return nil;
-    }
-    NSString *newString = [self stringByAppendingString:salt];
-    return [newString tm_SHA1];
+-(NSData *) tm_SHA1Data{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    return [data tm_SHA1Data];
 }
 
--(NSString *) tm_SHA224WithSalt:(NSString *)salt{
-    if (!salt) {
-        return nil;
-    }
-    NSString *newString = [self stringByAppendingString:salt];
-    return [newString tm_SHA224];
+-(NSData *) tm_SHA224Data{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    return [data tm_SHA224Data];
 }
 
--(NSString *) tm_SHA256WithSalt:(NSString *)salt{
-    if (!salt) {
-        return nil;
-    }
-    NSString *newString = [self stringByAppendingString:salt];
-    return [newString tm_SHA256];
+-(NSData *) tm_SHA256Data{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    return [data tm_SHA256Data];
 }
 
--(NSString *) tm_SHA384WithSalt:(NSString *)salt{
-    if (!salt) {
-        return nil;
-    }
-    NSString *newString = [self stringByAppendingString:salt];
-    return [newString tm_SHA384];
+-(NSData *) tm_SHA384Data{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    return [data tm_SHA384Data];
 }
 
--(NSString *) tm_SHA512WithSalt:(NSString *)salt{
-    if (!salt) {
-        return nil;
-    }
-    NSString *newString = [self stringByAppendingString:salt];
-    return [newString tm_SHA512];
+-(NSData *) tm_SHA512Data{
+    const char *cstr = [self UTF8String];
+    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    return [data tm_SHA512Data];
 }
+
 
 
 @end

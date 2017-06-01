@@ -11,108 +11,134 @@
 @interface NSString (TMEncrypt)
 
 
+
+/**
+ Encrypt string by MD2
+ 
+ @return NSString
+ */
+- (NSString *)tm_MD2String;
+
+
+/**
+ Encrypt string by MD2
+ 
+ @return NSData
+ */
+- (NSData *)tm_MD2Data;
+
+/**
+ Encrypt string by MD4
+ 
+ @return NSString
+ */
+- (NSString *)tm_MD4String;
+
+/**
+ Encrypt string by MD4
+ 
+ @return NSData
+ */
+- (NSData *)tm_MD4Data;
+
+
 /**
  Encrypt string by MD5
 
- @return nsstring
+ @return NSString
  */
--(NSString *) tm_MD5;
+-(NSString *) tm_MD5String;
 
 
 /**
   Encrypt string by sha1
 
- @return nsstring
+ @return NSString
  */
--(NSString *) tm_SHA1;
+-(NSString *) tm_SHA1String;
 
 
 /**
  Encrypt string by sha1
 
- @return nsstring
+ @return NSString
  */
--(NSString *) tm_SHA224;
+-(NSString *) tm_SHA224String;
 
 
 /**
  Encrypt string by sha256
  
- @return nsstring
+ @return NSString
  */
--(NSString *) tm_SHA256;
+-(NSString *) tm_SHA256String;
 
 
 /**
  Encrypt string by sha384
  
- @return nsstring
+ @return NSString
  */
--(NSString *) tm_SHA384;
+-(NSString *) tm_SHA384String;
 
 
 /**
  Encrypt string by sha512
 
- @return nsstring
+ @return NSString
  */
--(NSString *) tm_SHA512;
+-(NSString *) tm_SHA512String;
 
-//=================================add salt============================
+
 
 
 
 /**
-  Encrypt string by MD5
-
- @param salt random string
- @return nsstring
+ Encrypt string by MD5
+ 
+ @return NSData
  */
--(NSString *) tm_MD5WithSalt:(NSString *)salt;
+-(NSData *) tm_MD5Data;
 
 
 /**
  Encrypt string by sha1
-
- @param salt  random string
- @return nsstring
+ 
+ @return NSData
  */
--(NSString *) tm_SHA1WithSalt:(NSString *)salt;
+-(NSData *) tm_SHA1Data;
 
 
 /**
- Encrypt string by sha224
-
- @param salt random string
- @return nsstring
+ Encrypt string by sha1
+ 
+ @return NSData
  */
--(NSString *) tm_SHA224WithSalt:(NSString *)salt;
+-(NSData *) tm_SHA224Data;
 
 
 /**
  Encrypt string by sha256
-
- @param salt random string
- @return nsstring
+ 
+ @return NSData
  */
--(NSString *) tm_SHA256WithSalt:(NSString *)salt;
+-(NSData *) tm_SHA256Data;
 
 
 /**
- Encrypt string by sha386
-
- @param salt random string
- @return nsstring
+ Encrypt string by sha384
+ 
+ @return NSData
  */
--(NSString *) tm_SHA384WithSalt:(NSString *)salt;
+-(NSData *) tm_SHA384Data;
 
 
 /**
-  Encrypt string by sha512
-
- @param salt random string
- @return nsstring
+ Encrypt string by sha512
+ 
+ @return NSData
  */
--(NSString *) tm_SHA512WithSalt:(NSString *)salt;
+-(NSData *) tm_SHA512Data;
+
 
 @end
