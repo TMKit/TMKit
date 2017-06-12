@@ -17,6 +17,8 @@
 
 
 
+
+
 @interface TMLogUtil : NSObject
 
 + (void)startLog:(NSString*)string;

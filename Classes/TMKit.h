@@ -19,5 +19,6 @@
 #import "NSDate+TMUtil.h"
 #import "NSData+TMUtil.h"
 #import "NSString+TMUtil.h"
+#import "NSObject+TMDataValid.h"
 
 #endif /* TMKit_h */
