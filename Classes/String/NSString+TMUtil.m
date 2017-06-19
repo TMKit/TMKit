@@ -44,7 +44,7 @@
     return [NSData tm_dataWithBase64EncodedString:self];
 }
 
-- (NSString* )trimWhitespace{
+- (NSString* )tm_trimWhitespace{
     return [self stringByTrimmingCharactersInSet:
             [NSCharacterSet whitespaceCharacterSet]];
 }

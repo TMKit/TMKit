@@ -25,6 +25,6 @@
 
 //==================Handle======================
 
-- (NSString* )trimWhitespace;
+- (NSString* )tm_trimWhitespace;
 
 @end
