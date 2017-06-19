@@ -1,6 +1,6 @@
 //
 //  NSString+TMUtil.h
-//  Pods
+//  TMKit
 //
 //  Created by Teemo on 25/05/2017.
 //
@@ -22,5 +22,9 @@
 
 - (NSData *)tm_base64DecodedData;
 
+
+//==================Handle======================
+
+- (NSString* )trimWhitespace;
 
 @end

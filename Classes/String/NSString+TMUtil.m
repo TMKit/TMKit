@@ -1,6 +1,6 @@
 //
 //  NSString+TMUtil.m
-//  Pods
+//  TMKit
 //
 //  Created by Teemo on 25/05/2017.
 //
@@ -44,5 +44,9 @@
     return [NSData tm_dataWithBase64EncodedString:self];
 }
 
+- (NSString* )trimWhitespace{
+    return [self stringByTrimmingCharactersInSet:
+            [NSCharacterSet whitespaceCharacterSet]];
+}
 
 @end
