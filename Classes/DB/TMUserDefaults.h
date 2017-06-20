@@ -10,4 +10,10 @@
 
 @interface TMUserDefaults : NSObject
 
++ (void)setObject:(NSString*_Nonnull)key forKey:(id _Nullable)value;
+
++ (void)removeObjectForKey:(NSString *_Nonnull)defaultName;
+
++ (nullable id)objectForKey:(NSString *_Nonnull)defaultName;
+
 @end
