@@ -49,4 +49,35 @@
             [NSCharacterSet whitespaceCharacterSet]];
 }
 
++ (NSString *)tm_UUID
+{
+    CFUUIDRef theUUID = CFUUIDCreate(NULL);
+    CFStringRef string = CFUUIDCreateString(NULL, theUUID);
+    CFRelease(theUUID);
+    NSString* retStr = (__bridge_transfer NSString *)string;
+    return [[retStr stringByReplacingOccurrencesOfString:@"-" withString:@""] lowercaseString];
+}
+
+-(NSDictionary*)tm_toJson{
+    NSData *jsonData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    NSObject *object = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+    return (NSDictionary*)object;
+}
+
+- (NSString*)tm_UTF8{
+    if (!self.length) {
+        return nil;
+    }
+    if ([self respondsToSelector:@selector(stringByAddingPercentEncodingWithAllowedCharacters:)]) {
+#ifdef __IPHONE_9_0
+        return  [self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+#else
+        return self;
+#endif
+    }
+    else{
+        return [self stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    }
+}
+
 @end

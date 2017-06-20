@@ -12,19 +12,28 @@
 
 //==================Base64======================
 
-+ (NSString *)tm_stringWithBase64EncodedString:(NSString *)string;
++ (NSString*)tm_stringWithBase64EncodedString:(NSString*)string;
 
-- (NSString *)tm_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
+- (NSString*)tm_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
 
-- (NSString *)tm_base64EncodedString;
+- (NSString*)tm_base64EncodedString;
 
-- (NSString *)tm_base64DecodedString;
+- (NSString*)tm_base64DecodedString;
 
-- (NSData *)tm_base64DecodedData;
+- (NSData*)tm_base64DecodedData;
 
+
+
+//==================UUID========================
+
++ (NSString*)tm_UUID;
 
 //==================Handle======================
 
-- (NSString* )tm_trimWhitespace;
+- (NSString*)tm_trimWhitespace;
+
+- (NSDictionary*)tm_toJson;
+
+- (NSString*)tm_UTF8;
 
 @end

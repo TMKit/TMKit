@@ -11,6 +11,7 @@
 #ifndef TMKit_h
 #define TMKit_h
 
+#import "TMMacroDefine.h"
 #import "TMLogUtil.h"
 #import "TMVersionUtil.h"
 
