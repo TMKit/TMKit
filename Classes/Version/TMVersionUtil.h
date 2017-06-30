@@ -19,13 +19,13 @@
 
  @return nsstring
  */
-+ (NSString*)getBundleVersion;
++ (NSString* _Nonnull )getBundleVersion;
 
 /**
   Get Short Bundle Version
 
  @return nsstring
  */
-+ (NSString*)getShortBundleVersion;
++ (NSString* _Nonnull )getShortBundleVersion;
 
 @end

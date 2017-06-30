@@ -16,4 +16,6 @@
 
 + (nullable id)objectForKey:(NSString *_Nonnull)defaultName;
 
++ (void)synchronize;
+
 @end

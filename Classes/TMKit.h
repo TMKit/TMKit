@@ -14,6 +14,7 @@
 #import "TMMacroDefine.h"
 #import "TMLogUtil.h"
 #import "TMVersionUtil.h"
+#import "TMUserDefaults.h"
 
 //=============Category============
 #import "NSString+TMEncrypt.h"
