@@ -19,4 +19,8 @@
     return [[UIColor alloc]initWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:a];
 }
 
+
++ (UIColor*)tm_colorWithTransparency:(CGFloat)transparency{
+    return [UIColor tm_colorWithR:0 g:0 b:0 a:transparency];
+}
 @end

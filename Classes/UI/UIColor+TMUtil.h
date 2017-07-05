@@ -16,4 +16,5 @@
 
 + (UIColor*)tm_colorWithR:(CGFloat)r g:(CGFloat)g b:(CGFloat)b a:(CGFloat)a;
 
++ (UIColor*)tm_colorWithTransparency:(CGFloat)transparency;
 @end
