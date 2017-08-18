@@ -3,7 +3,8 @@
 //  TMKit
 //
 //  Created by Teemo on 10/04/2017.
-//  Copyright © 2017 TMKit. All rights reserved.
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #import "NSObject+TMDataValid.h"
@@ -71,33 +72,7 @@
     return NO;
 }
 
-//- (NSInteger)getInteger{
-//    if (![self handleNull]) {
-//        return 0;
-//    }
-//    return nil;
-//}
-//
-//- (NSUInteger)getUInteger{
-//    if (![self handleNull]) {
-//        return 0;
-//    }
-//    return nil;
-//}
-//
-//- (CGFloat)getCGFloat{
-//    if (![self handleNull]) {
-//        return 0;
-//    }
-//    return nil;
-//}
-//
-//- (long long)getLongLongValue{
-//    if (![self handleNull]) {
-//        return 0;
-//    }
-//    return nil;
-//}
+
 
 - (BOOL)p_handleNull{
    

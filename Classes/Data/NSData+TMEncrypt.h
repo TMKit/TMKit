@@ -3,10 +3,13 @@
 //  TMKit
 //
 //  Created by Teemo on 27/05/2017.
-//
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface NSData (TMEncrypt)
 
@@ -124,3 +127,5 @@
 - (NSData *)tm_SHA512Data;
 
 @end
+
+NS_ASSUME_NONNULL_END

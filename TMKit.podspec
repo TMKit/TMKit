@@ -8,17 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TMKit'
-  s.version          = '0.1.0'
-  s.summary          = 'This is useful tool for developer.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.2.0'
+  s.summary          = 'This library supports Objc&Swift and has a number of tools and methods for iOS development'
 
   s.description      = <<-DESC
-  This is useful tool for developer.
+  This library supports Objc&Swift and has a number of tools and methods for iOS development
                        DESC
 
   s.homepage         = 'https://github.com/TMKit/TMKit'
@@ -26,17 +20,10 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Teemo' => 'cjianneng@outlook.com' }
   s.source           = { :git => 'https://github.com/TMKit/TMKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
   s.source_files = 'Classes/**/*'
   s.frameworks = 'UIKit'
 
-  # s.resource_bundles = {
-  #   'TMKit' => ['TMKit/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

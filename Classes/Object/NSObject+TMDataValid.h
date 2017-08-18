@@ -3,10 +3,13 @@
 //  TMKit
 //
 //  Created by Teemo on 10/04/2017.
-//  Copyright © 2017 TMKit. All rights reserved.
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (TMDataValid)
 
@@ -16,7 +19,7 @@
 
  @return NSString or nil
  */
-- (NSString*)tm_String;
+- (nullable NSString*)tm_String;
 
 
 /**
@@ -24,7 +27,7 @@
 
  @return NSNumber or nil
  */
-- (NSNumber*)tm_Number;
+- (nullable NSNumber*)tm_Number;
 
 
 /**
@@ -32,7 +35,7 @@
 
  @return NSDictionary or nil
  */
-- (NSDictionary*)tm_Dictionary;
+- (nullable NSDictionary*)tm_Dictionary;
 
 
 
@@ -41,7 +44,7 @@
  
  @return NSArray or nil
  */
-- (NSArray*)tm_Array;
+- (nullable NSArray*)tm_Array;
 
 
 /**
@@ -51,7 +54,6 @@
  */
 - (BOOL)tm_isNull;
 
-
-
-
 @end
+
+NS_ASSUME_NONNULL_END

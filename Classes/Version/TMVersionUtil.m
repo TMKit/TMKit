@@ -3,10 +3,19 @@
 //  TMKit
 //
 //  Created by Teemo on 19/05/2017.
-//  Copyright © 2017 netease. All rights reserved.
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #import "TMVersionUtil.h"
+
+NSString* _Nullable  tm_BundleVersion(){
+    return [TMVersionUtil getBundleVersion];
+}
+
+NSString* _Nullable  tm_BundleShortVersion(){
+    return [TMVersionUtil getShortBundleVersion];
+}
 
 @implementation TMVersionUtil
 

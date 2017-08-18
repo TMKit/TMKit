@@ -3,10 +3,18 @@
 //  TMKit
 //
 //  Created by Teemo on 18/05/2017.
-//
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #import <Foundation/Foundation.h>
+
+// TODO
+//◽️ Verbose messages are tagged with a small gray square — easy to ignore
+//◾️ Debug messages have a black square; easier to spot, but still de-emphasized
+//🔷 Info messages add a splash of color in the form of a blue diamond
+//🔶 Warnings are highlighted with a fire-orange diamond
+//❌ Error messages stand out with a big red X — hard to miss!
 
 
 #ifdef DEBUG

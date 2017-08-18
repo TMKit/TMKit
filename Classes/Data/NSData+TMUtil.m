@@ -3,7 +3,8 @@
 //  TMKit
 //
 //  Created by Teemo on 25/05/2017.
-//
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #import "NSData+TMUtil.h"

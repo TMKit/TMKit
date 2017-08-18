@@ -3,7 +3,8 @@
 //  TMKit
 //
 //  Created by Teemo on 27/05/2017.
-//
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #import "NSData+TMEncrypt.h"
