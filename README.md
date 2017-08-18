@@ -14,9 +14,6 @@
     <a href="https://github.com/TMKit/TMKit/blob/master/LICENSE">
         <img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="License">
     </a>
-    <a href="https://www.apple.com/nl/ios/">
-        <img src="https://img.shields.io/badge/support-ios-red.svg)" alt="Platform">
-    </a>
 </p>
 
 
@@ -25,7 +22,7 @@
 - [x] simple API
 - [x] more powerful method
 
-## Example
+## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 

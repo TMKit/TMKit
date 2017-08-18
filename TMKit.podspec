@@ -9,11 +9,10 @@
 Pod::Spec.new do |s|
   s.name             = 'TMKit'
   s.version          = '0.2.0'
-  s.summary          = 'This library supports Objc&Swift and has a number of tools and methods for iOS development'
+  s.summary          = 'This library supports Objc&Swift, TMKit has many tools and methods for iOS development'
 
   s.description      = <<-DESC
-  This library supports Objc&Swift and has a number of tools and methods for iOS development
-                       DESC
+  This library supports Objc&Swift, TMKit has many tools and methods for iOS development
 
   s.homepage         = 'https://github.com/TMKit/TMKit'
   s.screenshots     = 'https://avatars1.githubusercontent.com/u/28727841?v=3&s=600'
