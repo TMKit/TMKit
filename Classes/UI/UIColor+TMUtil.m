@@ -10,7 +10,7 @@
 #import "UIColor+TMUtil.h"
 
 UIColor* tm_RGB(CGFloat r,CGFloat g,CGFloat b){
-    return [UIColor tm_colorWithR:r g:0 b:0];
+    return [UIColor tm_colorWithR:r g:g b:b];
 }
 
 UIColor* tm_RGBA(CGFloat r,CGFloat g,CGFloat b,CGFloat a){
