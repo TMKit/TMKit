@@ -9,6 +9,15 @@
 
 #import <Foundation/Foundation.h>
 
+
+/*
+            Method	Production
+            verbose	No
+            debug	No
+            info	No
+            warning	No
+            error	Yes
+ */
 // TODO
 //◽️ Verbose messages are tagged with a small gray square — easy to ignore
 //◾️ Debug messages have a black square; easier to spot, but still de-emphasized
@@ -26,8 +35,11 @@
 
 
 
-
 @interface TMLogUtil : NSObject
 
+
++ (void)output:(const char*)fileName lineNumber:(int)lineNumber  input:(NSString*)input, ... ;
+
++ (void)verbose:(const char*)fileName lineNumber:(int)lineNumber input:(NSString*)input, ... ;
 
 @end
