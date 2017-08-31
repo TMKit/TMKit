@@ -29,12 +29,5 @@
 
 @interface TMLogUtil : NSObject
 
-//+ (void)startLog:(NSString*)string;
-//
-//+ (void)stopLog:(NSString*)string;
-
-//+ (void)output:(const char*)fileName lineNumber:(int)lineNumber input:(NSString*)input, ...;
-
-//+ (void)output:(const char*)fileName lineNumber:(int)lineNumber function:(const char*)function input:(NSString*)input, ...;
 
 @end
