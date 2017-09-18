@@ -12,9 +12,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern   NSString* _Nullable  tm_BundleVersion();
+extern  NSString* _Nullable  tm_BundleVersion();
 
-extern   NSString* _Nullable  tm_BundleShortVersion();
+extern  NSString* _Nullable  tm_BundleShortVersion();
 
 
 @interface TMVersionUtil : NSObject

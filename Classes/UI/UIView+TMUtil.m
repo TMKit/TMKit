@@ -9,15 +9,15 @@
 
 #import "UIView+TMUtil.h"
 
-CGFloat tm_ScreenWidth(){
+inline CGFloat tm_ScreenWidth(){
     return [UIScreen mainScreen].bounds.size.width;
 }
 
-CGFloat tm_ScreenHeight(){
+inline CGFloat tm_ScreenHeight(){
     return [UIScreen mainScreen].bounds.size.height;
 }
 
-CGFloat tm_ScreenScale(){
+inline CGFloat tm_ScreenScale(){
     return [UIScreen mainScreen].scale;
 }
 

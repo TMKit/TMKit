@@ -15,14 +15,14 @@
  
  @return width
  */
-extern CGFloat tm_ScreenWidth();
+extern  CGFloat tm_ScreenWidth();
 
 /**
  Get screen max width
 
  @return height
  */
-extern CGFloat tm_ScreenHeight();
+extern  CGFloat tm_ScreenHeight();
 
 
 /**
@@ -30,8 +30,12 @@ extern CGFloat tm_ScreenHeight();
 
  @return scale
  */
-extern CGFloat tm_ScreenScale();
+extern  CGFloat tm_ScreenScale();
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (TMUtil)
 
 @end
+
+NS_ASSUME_NONNULL_END

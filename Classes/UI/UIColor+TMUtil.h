@@ -22,7 +22,7 @@ convenient to create the UIColor , aphle is one
  @param b blue channel
  @return UIColor
  */
-extern UIColor* tm_RGB(CGFloat r,CGFloat g,CGFloat b);
+extern  UIColor* tm_RGB(CGFloat r,CGFloat g,CGFloat b);
 
 
 /**
@@ -34,7 +34,7 @@ extern UIColor* tm_RGB(CGFloat r,CGFloat g,CGFloat b);
  @param a aphle channel
  @return UIColor
  */
-extern UIColor* tm_RGBA(CGFloat r,CGFloat g,CGFloat b,CGFloat a);
+extern  UIColor* tm_RGBA(CGFloat r,CGFloat g,CGFloat b,CGFloat a);
 
 
 @interface UIColor (TMUtil)

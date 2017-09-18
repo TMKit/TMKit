@@ -9,11 +9,11 @@
 
 #import "TMVersionUtil.h"
 
-NSString* _Nullable  tm_BundleVersion(){
+inline NSString* _Nullable  tm_BundleVersion(){
     return [TMVersionUtil getBundleVersion];
 }
 
-NSString* _Nullable  tm_BundleShortVersion(){
+inline NSString* _Nullable  tm_BundleShortVersion(){
     return [TMVersionUtil getShortBundleVersion];
 }
 
