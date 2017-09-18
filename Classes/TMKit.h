@@ -23,5 +23,6 @@
 #import "NSString+TMUtil.h"
 #import "NSObject+TMDataValid.h"
 #import "UIColor+TMUtil.h"
+#import "UIView+TMUtil.h"
 
 #endif /* TMKit_h */
