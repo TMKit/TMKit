@@ -15,14 +15,14 @@
  
  @return width
  */
-extern  CGFloat tm_ScreenWidth();
+extern  CGFloat tm_ScreenWidth(void);
 
 /**
  Get screen max width
 
  @return height
  */
-extern  CGFloat tm_ScreenHeight();
+extern  CGFloat tm_ScreenHeight(void);
 
 
 /**
@@ -30,7 +30,7 @@ extern  CGFloat tm_ScreenHeight();
 
  @return scale
  */
-extern  CGFloat tm_ScreenScale();
+extern  CGFloat tm_ScreenScale(void);
 
 NS_ASSUME_NONNULL_BEGIN
 
