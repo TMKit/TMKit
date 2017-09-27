@@ -15,7 +15,8 @@
 + (void)load{
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDir = [paths objectAtIndex:0];
-    TMLog(@"TMKit Log: UserDefaults path %@",documentDir);
+//    TMLog(@"TMKit Log: UserDefaults path %@",documentDir);
+    TMLogInfo(@"TMKit Log: UserDefaults path %@",documentDir);
 }
 
 + (void)setObject:(NSString*)value key:(id)key{
@@ -45,6 +46,6 @@
 
 + (void)synchronize{
     BOOL result = [[NSUserDefaults standardUserDefaults] synchronize];
-    TMLog(@"%TMKit Log: TMUserDefaults synchronize result %d",result);
+    TMLogInfo(@"%TMKit Log: TMUserDefaults synchronize result %d",result);
 }
 @end

@@ -7,12 +7,18 @@
 //
 
 #import "TMKitAppDelegate.h"
+#import <TMKit/TMKit.h>
 
 @implementation TMKitAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    TMLogError(@"error");
+    TMLogInfo(@"info");
+    TMLogDebug(@"debug");
+    TMLogVerbose(@"Verbose");
+    TMLogWarning(@"warning");
     return YES;
 }
 
