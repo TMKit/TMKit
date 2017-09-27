@@ -13,14 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (TMDataValid)
 
-
 /**
  safely to get String
 
  @return NSString or nil
  */
 - (nullable NSString*)tm_String;
-
 
 /**
  safely to get NSNumber
@@ -29,7 +27,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable NSNumber*)tm_Number;
 
-
 /**
  safely to get NSDictionary
 
@@ -37,15 +34,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable NSDictionary*)tm_Dictionary;
 
-
-
 /**
  safely to get NSArray
  
  @return NSArray or nil
  */
 - (nullable NSArray*)tm_Array;
-
 
 /**
  judge data if data is null
