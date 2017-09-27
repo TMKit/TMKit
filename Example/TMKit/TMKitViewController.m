@@ -7,7 +7,7 @@
 //
 
 #import "TMKitViewController.h"
-#import <TMKit/TMLogUtil.h>
+#import <TMKit/TMKit.h>
 
 @interface TMKitViewController ()
 

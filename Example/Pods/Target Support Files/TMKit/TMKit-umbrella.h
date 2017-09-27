@@ -21,6 +21,7 @@
 #import "NSString+TMUtil.h"
 #import "TMKit.h"
 #import "UIColor+TMUtil.h"
+#import "UIView+TMUtil.h"
 #import "TMVersionUtil.h"
 
 FOUNDATION_EXPORT double TMKitVersionNumber;
