@@ -8,7 +8,7 @@
 //
 
 #import "TMUserDefaults.h"
-#import "TMLogUtil.h"
+#import "TMLog.h"
 
 @implementation TMUserDefaults
 

@@ -12,7 +12,7 @@
 #define TMKit_h
 
 #import "TMMacroDefine.h"
-#import "TMLogUtil.h"
+#import "TMLog.h"
 #import "TMVersionUtil.h"
 #import "TMUserDefaults.h"
 
