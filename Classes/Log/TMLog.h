@@ -8,7 +8,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+NS_ASSUME_NONNULL_BEGIN
 /*
             Method	Production
             verbose	No
@@ -21,7 +21,7 @@
 /**
  ❌ Error messages stand out with a big red X — hard to miss!
  */
-FOUNDATION_EXPORT  void TMLogError(NSString* input, ...);
+FOUNDATION_EXPORT  void TMLogError(NSString*  input, ...);
 
 /**
  🔶 Warnings are highlighted with a fire-orange diamond
@@ -55,28 +55,28 @@ FOUNDATION_EXPORT  void TMLogVerbose(NSString* input, ...);
 /**
  ❌ Error messages stand out with a big red X — hard to miss!
  */
-+ (void)error:(NSString*) input;
++ (void)error:(nullable NSString*) input;
 
 /**
  🔶 Warnings are highlighted with a fire-orange diamond
  */
-+ (void)warnings:(NSString*)input;
++ (void)warnings:(nullable NSString*)input;
 
 /**
  🔷 Info messages add a splash of color in the form of a blue diamond
  */
-+ (void)info:(NSString*)input;
++ (void)info:(nullable NSString*)input;
 
 /**
  ◾️ Debug messages have a black square; easier to spot, but still de-emphasized
  */
-+ (void)debug:(NSString*)input;
++ (void)debug:(nullable NSString*)input;
 
 /**
  ◽️ Verbose messages are tagged with a small gray square — easy to ignore
  */
-+ (void)verbose:(NSString*)input;
++ (void)verbose:(nullable NSString*)input;
 
 @end
 
-
+NS_ASSUME_NONNULL_END
