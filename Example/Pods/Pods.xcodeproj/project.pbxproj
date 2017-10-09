@@ -7,61 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02346B50D0254B0FE2540D3192C7524E /* UIColor+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 655F05C92A0277013AC05CEC95C4186F /* UIColor+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		051065EE348DEDB6515ADF64EEAC4F9A /* NSData+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C5C583740F5D820ADBF5C3807557FD /* NSData+TMUtil.m */; };
 		051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		087248DFCCA0CF6142DB3DCF025D3B8F /* NSString+TMEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD4AC44EE1D69235D63F4A52DF8F010 /* NSString+TMEncrypt.m */; };
 		094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */; };
-		0A2CCDB67BE86F96304A81F77C5AD5D6 /* TMVersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 060C643B251023D93F156D34E51FAA58 /* TMVersionUtil.m */; };
-		1175E78CBB788834960C2AA2482A3D05 /* NSString+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8360DBA62469BE73ED6AAA737A6E8E /* NSString+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		179169652C7C04A39193482B806CD888 /* TMUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C03D2A08BA9FF05D682895E283E6A0 /* TMUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17B981888AC46BB6D3E17E6E0AECB6D1 /* NSDate+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E139928365E1A34FA729E503333CBAC0 /* NSDate+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1843227A8406491C6D2A5447476793FB /* NSObject+TMDataValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 820BAAE94B197C1B41BF98EDB9316588 /* NSObject+TMDataValid.m */; };
+		0C3FE9711C6E53CE13DADD5EA04151BC /* NSData+TMEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4904E744C1D161B7A6F286F268927A15 /* NSData+TMEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14D7459F05A0B05818B40DE43BCF362B /* NSDate+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E139928365E1A34FA729E503333CBAC0 /* NSDate+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1668A72851A7ECFE37ACD9384CE08E19 /* NSString+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8360DBA62469BE73ED6AAA737A6E8E /* NSString+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
-		2D1A820E59A74D0D2A5E393CA3E520FC /* TMLogUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C93DD859EC6B48D11CEF359294BD58B /* TMLogUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23DA8024223514382917557364E899A6 /* NSString+TMEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA342A0B97A83EF1B3E17DCBC8E1602 /* NSString+TMEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32B10A4FD040D470893C9AA7F94D75A2 /* NSDate+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A8E81FD964F3FA553E1DE33DC6942 /* NSDate+TMUtil.m */; };
 		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
-		395C6C4E58BCC33CE1331534EE8685EF /* NSObject+TMDataValid.h in Headers */ = {isa = PBXBuildFile; fileRef = F0EABCE42B6FCBC855392FD45E26DE78 /* NSObject+TMDataValid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D11B6FF34BD4DBA4AFA60E5CF9E3DD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
 		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		451721D5F1B928438EC524DE8B24302C /* TMKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A6927D4B823A41F7408F2408EB82FB /* TMKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47DCC23006FC58CF3A6B26D308185239 /* NSObject+TMDataValid.h in Headers */ = {isa = PBXBuildFile; fileRef = F0EABCE42B6FCBC855392FD45E26DE78 /* NSObject+TMDataValid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */; };
-		5D0B156A4DB0B8931D038BC5F7AC2A2F /* TMMacroDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA5716B2B5C250F8CD6C1ED15BC67DB /* TMMacroDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D9842076FC40EBDF357AD7D3BDD6D64 /* TMMacroDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA5716B2B5C250F8CD6C1ED15BC67DB /* TMMacroDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6016116883BD8484FFE0FE4800591CCC /* UIColor+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2987DBF0EF0430855984F8682F153528 /* UIColor+TMUtil.m */; };
+		611A50F1A7E219F399A0AC7556199702 /* TMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EA519A6BE74EA42D581FD3303BAF3FB6 /* TMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6799255C9BDE2A0E0855BDA4AEE8DAE4 /* Pods-TMKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD13B0A2AB3779435F2D61156E6E5E2 /* Pods-TMKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68CA6D38D173312019204EE8B6B16E0C /* UIView+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = FA70FF73D0FB6A59426CDB79DD4EEB46 /* UIView+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
-		6B738359669EF3EC81D098FD816AA9C6 /* NSData+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C5C583740F5D820ADBF5C3807557FD /* NSData+TMUtil.m */; };
 		725C92F464E43C4232BCBC8EE735C372 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
+		730C8AB637EA2B508486802F6303ED39 /* TMVersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 060C643B251023D93F156D34E51FAA58 /* TMVersionUtil.m */; };
 		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
-		7B166498834F853A23A41CA664464EE3 /* TMLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 358686BB9DF71225266A52065F630666 /* TMLogUtil.m */; };
 		7E9B14D5F8842A86CA86F2AF45230725 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F339250A1C3C5C5C5364254007103 /* XCTest.framework */; };
-		7EE33278A4AD1FC0485ADCCFF9D77682 /* UIColor+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2987DBF0EF0430855984F8682F153528 /* UIColor+TMUtil.m */; };
 		812B12009672AF7712DC39DA5D26CEB8 /* Pods-TMKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F45A48F1D8111218FA7FCBD000E660 /* Pods-TMKit_Example-dummy.m */; };
-		81D8A7D6DAE56AC33B9B124AC0511208 /* NSData+TMEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC245AB8B4F37E0708043723AF0D6E /* NSData+TMEncrypt.m */; };
+		82171290A0B12CF8566608337AE944F9 /* NSDate+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A8E81FD964F3FA553E1DE33DC6942 /* NSDate+TMUtil.m */; };
+		82C2623C8A922C7BBDAEBE70CD398A1B /* NSObject+TMDataValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 820BAAE94B197C1B41BF98EDB9316588 /* NSObject+TMDataValid.m */; };
+		832A99B05C3A6B5E5A4F546B90536E08 /* NSData+TMEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC245AB8B4F37E0708043723AF0D6E /* NSData+TMEncrypt.m */; };
 		841FF232C33C7D49C58CEFDBE7EEB92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA323C90663942983643D7A4D1F697C8 /* UIKit.framework */; };
-		90A9E93CBC8BA474873CB894888A46E0 /* NSString+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F469750D2583A05AF5AC1625E80FBC /* NSString+TMUtil.m */; };
+		8AB99810A8D60C4C86D74D137B5F7DC7 /* UIView+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F3C7E3599FA010F84149BC9C3154 /* UIView+TMUtil.m */; };
 		91D0138ACFAD733E4061F12E450C336C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
+		94601E484EABF61FBAD0B8A3A501F634 /* UIColor+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 655F05C92A0277013AC05CEC95C4186F /* UIColor+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A18B289D1F139DC671EB9493EF9E5D30 /* TMVersionUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = FA76D6951FCD78FD712BBB1D6D9D051B /* TMVersionUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A20CE1E9F8FC51190AD531512693CE8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
+		A2F5472A6C344C9AE49D3BCD77F3CF27 /* TMKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B7FD18CB612B0C66C85BE1D8CC67CC /* TMKit-dummy.m */; };
+		A499555A9AAB4999263461DEDDFE5BDE /* TMUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BD3D8E7349D71E24CF38569FD65F0 /* TMUserDefaults.m */; };
 		A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */; };
+		B0F1F3622329017BF23DD10F1A55AF16 /* TMLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0369CF1AD44FC5FAC3794ADBD20462 /* TMLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1606A9274E87A759BC691BC3E5A5D9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA323C90663942983643D7A4D1F697C8 /* UIKit.framework */; };
 		B27DFD6025D94758785918F1D6F6C060 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27810809BAD71E4022600B21251449F /* QuartzCore.framework */; };
-		B40B8EDF621983FAB6FACE21E845CA11 /* TMKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B7FD18CB612B0C66C85BE1D8CC67CC /* TMKit-dummy.m */; };
 		B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D037B3C804B9E1BB70538E342E5104 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B84A22315F186B26E4FDC9E888EDCC43 /* TMKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A6927D4B823A41F7408F2408EB82FB /* TMKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */; };
 		BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C29D53051C770944821601FFCFE88FA9 /* TMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EA519A6BE74EA42D581FD3303BAF3FB6 /* TMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C53285A1B038482502FC23DBCF59E39B /* NSData+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B06DE31107463EC2BFE8B0F031D9D57A /* NSData+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C212E0F747CB3B337875EEE1F07DBA32 /* NSString+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F469750D2583A05AF5AC1625E80FBC /* NSString+TMUtil.m */; };
 		CA0B1867888A3C4280EFEFD8E5FF7BA9 /* Pods-TMKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4822AE4F4F526DA622A792BEABC2C8 /* Pods-TMKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		CD99950C725D84940E503D69DC6DC15D /* TMUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BD3D8E7349D71E24CF38569FD65F0 /* TMUserDefaults.m */; };
 		CF64D2EC13E8D91800B547024144A28D /* Pods-TMKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F80010CBAF13099B8A6F363EE9A639E6 /* Pods-TMKit_Tests-dummy.m */; };
-		D68389A1AA842D750AD0D8A885DD63AE /* UIView+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = FA70FF73D0FB6A59426CDB79DD4EEB46 /* UIView+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3573B55EDA6C1814815C0A3EED361F7 /* TMUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C03D2A08BA9FF05D682895E283E6A0 /* TMUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
-		E252F3F8BB3F1CCA8C97E509981642AD /* NSString+TMEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA342A0B97A83EF1B3E17DCBC8E1602 /* NSString+TMEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB402A0A504CC438D9778C05709CFA0D /* TMVersionUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = FA76D6951FCD78FD712BBB1D6D9D051B /* TMVersionUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA9232DE8412ABB7F2E12BCB025A3DF8 /* NSString+TMEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD4AC44EE1D69235D63F4A52DF8F010 /* NSString+TMEncrypt.m */; };
-		FB39323AE3C4BC3BBF9D544BC5972471 /* NSData+TMEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4904E744C1D161B7A6F286F268927A15 /* NSData+TMEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB87F6EDEF5BB3E345181D4BCDBDACC7 /* UIView+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F3C7E3599FA010F84149BC9C3154 /* UIView+TMUtil.m */; };
+		E12160619CDECB94E642431921786FB0 /* NSData+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B06DE31107463EC2BFE8B0F031D9D57A /* NSData+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1A80FC35A8249A5AA24BBC42E260BD /* TMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7146AE37C92C71CDA0469915C57E4B /* TMLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +87,7 @@
 		032BD3D8E7349D71E24CF38569FD65F0 /* TMUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMUserDefaults.m; sourceTree = "<group>"; };
 		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		060C643B251023D93F156D34E51FAA58 /* TMVersionUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMVersionUtil.m; sourceTree = "<group>"; };
+		0A0369CF1AD44FC5FAC3794ADBD20462 /* TMLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMLog.h; sourceTree = "<group>"; };
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		1161F3C7E3599FA010F84149BC9C3154 /* UIView+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+TMUtil.m"; sourceTree = "<group>"; };
 		11F469750D2583A05AF5AC1625E80FBC /* NSString+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+TMUtil.m"; sourceTree = "<group>"; };
@@ -98,7 +99,6 @@
 		29791EB103001299F7530D748072088C /* Pods_TMKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TMKit_Example.framework; path = "Pods-TMKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2987DBF0EF0430855984F8682F153528 /* UIColor+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TMUtil.m"; sourceTree = "<group>"; };
 		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		358686BB9DF71225266A52065F630666 /* TMLogUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMLogUtil.m; sourceTree = "<group>"; };
 		39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		3A8F339250A1C3C5C5C5364254007103 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
@@ -116,7 +116,6 @@
 		710F0844A87226CB74E2E14B67B47903 /* Pods-TMKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMKit_Example-resources.sh"; sourceTree = "<group>"; };
 		73D037B3C804B9E1BB70538E342E5104 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		78E3AE8A3D82E91BB724ED100A82153D /* Pods-TMKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TMKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7C93DD859EC6B48D11CEF359294BD58B /* TMLogUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMLogUtil.h; sourceTree = "<group>"; };
 		7DA5716B2B5C250F8CD6C1ED15BC67DB /* TMMacroDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMMacroDefine.h; sourceTree = "<group>"; };
 		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		7E9A8E81FD964F3FA553E1DE33DC6942 /* NSDate+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TMUtil.m"; sourceTree = "<group>"; };
@@ -162,6 +161,7 @@
 		F80010CBAF13099B8A6F363EE9A639E6 /* Pods-TMKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TMKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		FA70FF73D0FB6A59426CDB79DD4EEB46 /* UIView+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+TMUtil.h"; sourceTree = "<group>"; };
 		FA76D6951FCD78FD712BBB1D6D9D051B /* TMVersionUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMVersionUtil.h; sourceTree = "<group>"; };
+		FD7146AE37C92C71CDA0469915C57E4B /* TMLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +245,16 @@
 			);
 			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		304E2EA1DFEFE58C3FAAFACBCE96B95B /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				0A0369CF1AD44FC5FAC3794ADBD20462 /* TMLog.h */,
+				FD7146AE37C92C71CDA0469915C57E4B /* TMLog.m */,
+			);
+			name = Log;
+			path = Log;
 			sourceTree = "<group>";
 		};
 		31031E36A165A39984FA496EFDE3CF50 /* Data */ = {
@@ -384,16 +394,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		941F91177F7CDADF49D35BEBFDD38B04 /* Log */ = {
-			isa = PBXGroup;
-			children = (
-				7C93DD859EC6B48D11CEF359294BD58B /* TMLogUtil.h */,
-				358686BB9DF71225266A52065F630666 /* TMLogUtil.m */,
-			);
-			name = Log;
-			path = Log;
-			sourceTree = "<group>";
-		};
 		947157E1F18693935077BECEC2C957B6 /* Object */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,7 +419,7 @@
 				31031E36A165A39984FA496EFDE3CF50 /* Data */,
 				D8036BB6D9F377C5D72FFCF36BF65E94 /* Date */,
 				19D830C19B65A2DCEFA920DBE00A0C7A /* DB */,
-				941F91177F7CDADF49D35BEBFDD38B04 /* Log */,
+				304E2EA1DFEFE58C3FAAFACBCE96B95B /* Log */,
 				6BAC42AC46B67818440B9FEE3E3A47DA /* Macro */,
 				947157E1F18693935077BECEC2C957B6 /* Object */,
 				6ADAFE6EB79E225879F8A110C564B325 /* String */,
@@ -501,27 +501,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		263F4E158C46ECCED06362F26DCCF810 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB39323AE3C4BC3BBF9D544BC5972471 /* NSData+TMEncrypt.h in Headers */,
-				C53285A1B038482502FC23DBCF59E39B /* NSData+TMUtil.h in Headers */,
-				17B981888AC46BB6D3E17E6E0AECB6D1 /* NSDate+TMUtil.h in Headers */,
-				395C6C4E58BCC33CE1331534EE8685EF /* NSObject+TMDataValid.h in Headers */,
-				E252F3F8BB3F1CCA8C97E509981642AD /* NSString+TMEncrypt.h in Headers */,
-				1175E78CBB788834960C2AA2482A3D05 /* NSString+TMUtil.h in Headers */,
-				451721D5F1B928438EC524DE8B24302C /* TMKit-umbrella.h in Headers */,
-				C29D53051C770944821601FFCFE88FA9 /* TMKit.h in Headers */,
-				2D1A820E59A74D0D2A5E393CA3E520FC /* TMLogUtil.h in Headers */,
-				5D0B156A4DB0B8931D038BC5F7AC2A2F /* TMMacroDefine.h in Headers */,
-				179169652C7C04A39193482B806CD888 /* TMUserDefaults.h in Headers */,
-				EB402A0A504CC438D9778C05709CFA0D /* TMVersionUtil.h in Headers */,
-				02346B50D0254B0FE2540D3192C7524E /* UIColor+TMUtil.h in Headers */,
-				D68389A1AA842D750AD0D8A885DD63AE /* UIView+TMUtil.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8C4CC27150E2EE91AA51A614791161BC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,6 +524,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B05551077EA02AFA9B1CDBD371E059B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3FE9711C6E53CE13DADD5EA04151BC /* NSData+TMEncrypt.h in Headers */,
+				E12160619CDECB94E642431921786FB0 /* NSData+TMUtil.h in Headers */,
+				14D7459F05A0B05818B40DE43BCF362B /* NSDate+TMUtil.h in Headers */,
+				47DCC23006FC58CF3A6B26D308185239 /* NSObject+TMDataValid.h in Headers */,
+				23DA8024223514382917557364E899A6 /* NSString+TMEncrypt.h in Headers */,
+				1668A72851A7ECFE37ACD9384CE08E19 /* NSString+TMUtil.h in Headers */,
+				B84A22315F186B26E4FDC9E888EDCC43 /* TMKit-umbrella.h in Headers */,
+				611A50F1A7E219F399A0AC7556199702 /* TMKit.h in Headers */,
+				B0F1F3622329017BF23DD10F1A55AF16 /* TMLog.h in Headers */,
+				5D9842076FC40EBDF357AD7D3BDD6D64 /* TMMacroDefine.h in Headers */,
+				D3573B55EDA6C1814815C0A3EED361F7 /* TMUserDefaults.h in Headers */,
+				A18B289D1F139DC671EB9493EF9E5D30 /* TMVersionUtil.h in Headers */,
+				94601E484EABF61FBAD0B8A3A501F634 /* UIColor+TMUtil.h in Headers */,
+				68CA6D38D173312019204EE8B6B16E0C /* UIView+TMUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8E1D08C20C4A502B7E503060A7B1E66 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -560,9 +560,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2783333CB4138433A844EB2ACAD31314 /* Build configuration list for PBXNativeTarget "TMKit" */;
 			buildPhases = (
-				A23A0206A9C83CF8A90C78F6F3FD7C8C /* Sources */,
+				C440BFBCE96633A74E6637146119EDBD /* Sources */,
 				88FCB3EA4E75D41F88264DCD2B852A38 /* Frameworks */,
-				263F4E158C46ECCED06362F26DCCF810 /* Headers */,
+				B05551077EA02AFA9B1CDBD371E059B8 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -672,22 +672,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A23A0206A9C83CF8A90C78F6F3FD7C8C /* Sources */ = {
+		C440BFBCE96633A74E6637146119EDBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81D8A7D6DAE56AC33B9B124AC0511208 /* NSData+TMEncrypt.m in Sources */,
-				6B738359669EF3EC81D098FD816AA9C6 /* NSData+TMUtil.m in Sources */,
-				32B10A4FD040D470893C9AA7F94D75A2 /* NSDate+TMUtil.m in Sources */,
-				1843227A8406491C6D2A5447476793FB /* NSObject+TMDataValid.m in Sources */,
-				FA9232DE8412ABB7F2E12BCB025A3DF8 /* NSString+TMEncrypt.m in Sources */,
-				90A9E93CBC8BA474873CB894888A46E0 /* NSString+TMUtil.m in Sources */,
-				B40B8EDF621983FAB6FACE21E845CA11 /* TMKit-dummy.m in Sources */,
-				7B166498834F853A23A41CA664464EE3 /* TMLogUtil.m in Sources */,
-				CD99950C725D84940E503D69DC6DC15D /* TMUserDefaults.m in Sources */,
-				0A2CCDB67BE86F96304A81F77C5AD5D6 /* TMVersionUtil.m in Sources */,
-				7EE33278A4AD1FC0485ADCCFF9D77682 /* UIColor+TMUtil.m in Sources */,
-				FB87F6EDEF5BB3E345181D4BCDBDACC7 /* UIView+TMUtil.m in Sources */,
+				832A99B05C3A6B5E5A4F546B90536E08 /* NSData+TMEncrypt.m in Sources */,
+				051065EE348DEDB6515ADF64EEAC4F9A /* NSData+TMUtil.m in Sources */,
+				82171290A0B12CF8566608337AE944F9 /* NSDate+TMUtil.m in Sources */,
+				82C2623C8A922C7BBDAEBE70CD398A1B /* NSObject+TMDataValid.m in Sources */,
+				087248DFCCA0CF6142DB3DCF025D3B8F /* NSString+TMEncrypt.m in Sources */,
+				C212E0F747CB3B337875EEE1F07DBA32 /* NSString+TMUtil.m in Sources */,
+				A2F5472A6C344C9AE49D3BCD77F3CF27 /* TMKit-dummy.m in Sources */,
+				FE1A80FC35A8249A5AA24BBC42E260BD /* TMLog.m in Sources */,
+				A499555A9AAB4999263461DEDDFE5BDE /* TMUserDefaults.m in Sources */,
+				730C8AB637EA2B508486802F6303ED39 /* TMVersionUtil.m in Sources */,
+				6016116883BD8484FFE0FE4800591CCC /* UIColor+TMUtil.m in Sources */,
+				8AB99810A8D60C4C86D74D137B5F7DC7 /* UIView+TMUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

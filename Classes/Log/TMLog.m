@@ -13,7 +13,6 @@
 @implementation TMLog
 
 + (void)error:(NSString*)input {
-
     [self output:@"❌ Error -" fileName:nil lineNumber:0 input:input];
 }
 

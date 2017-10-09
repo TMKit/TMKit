@@ -1,6 +1,6 @@
 {
   "name": "TMKit",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "summary": "This library supports Objc&Swift, TMKit has many tools and methods for iOS development",
   "description": "This library supports Objc&Swift, TMKit has many tools and methods for iOS development",
   "homepage": "https://github.com/TMKit/TMKit",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/TMKit/TMKit.git",
-    "tag": "0.2.0"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "8.0"

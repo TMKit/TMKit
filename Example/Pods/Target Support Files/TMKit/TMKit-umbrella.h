@@ -14,7 +14,7 @@
 #import "NSData+TMUtil.h"
 #import "NSDate+TMUtil.h"
 #import "TMUserDefaults.h"
-#import "TMLogUtil.h"
+#import "TMLog.h"
 #import "TMMacroDefine.h"
 #import "NSObject+TMDataValid.h"
 #import "NSString+TMEncrypt.h"
