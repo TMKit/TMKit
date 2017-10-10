@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TMKit'
-  s.version          = '0.1.0'
-  s.summary          = 'This is useful tool for developer.'
+  s.version          = '0.2.1'
+  s.summary          = '  This library supports Objc&Swift, TMKit has many tools and methods for iOS development'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  This is useful tool for developer.
+  This library supports Objc&Swift, TMKit has many tools and methods for iOS development
                        DESC
 
   s.homepage         = 'https://github.com/TMKit/TMKit'

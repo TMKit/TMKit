@@ -3,14 +3,15 @@
 //  TMKit
 //
 //  Created by Teemo on 24/05/2017.
-//
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSString (TMEncrypt)
-
-
 
 /**
  Encrypt string by MD2
@@ -90,9 +91,6 @@
 -(NSString *) tm_SHA512String;
 
 
-
-
-
 /**
  Encrypt string by MD5
  
@@ -140,5 +138,6 @@
  */
 -(NSData *) tm_SHA512Data;
 
-
 @end
+
+NS_ASSUME_NONNULL_END

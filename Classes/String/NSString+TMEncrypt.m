@@ -3,7 +3,8 @@
 //  TMKit
 //
 //  Created by Teemo on 24/05/2017.
-//
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #import "NSString+TMEncrypt.h"
@@ -12,8 +13,6 @@
 #import "NSData+TMEncrypt.h"
 
 @implementation NSString (TMEncrypt)
-
-
 
 - (NSString *)tm_MD2String{
     const char *cstr = [self UTF8String];

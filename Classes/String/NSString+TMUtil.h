@@ -3,37 +3,65 @@
 //  TMKit
 //
 //  Created by Teemo on 25/05/2017.
-//
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (TMUtil)
 
 //==================Base64======================
 
-+ (NSString*)tm_stringWithBase64EncodedString:(NSString*)string;
 
-- (NSString*)tm_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
+/**
+ encode the String to base64
 
-- (NSString*)tm_base64EncodedString;
-
-- (NSString*)tm_base64DecodedString;
-
-- (NSData*)tm_base64DecodedData;
-
+ @param string src String
+ @return String
+ */
++ (nullable NSString*)tm_base64Encoded:(NSString*)string;
 
 
 //==================UUID========================
 
+
+/**
+ UUID Number
+
+ @return String
+ */
 + (NSString*)tm_UUID;
 
 //==================Handle======================
 
-- (NSString*)tm_trimWhitespace;
 
-- (NSDictionary*)tm_toJson;
+/**
+ trim the space  
+ e.g   " hello " = >  "hello"
 
-- (NSString*)tm_UTF8;
+ @return String
+ */
+- (NSString*)tm_trim;
+
+
+/**
+ Json to Dictionary
+
+ @return NSDictionary
+ */
+- (nullable NSDictionary*)tm_jsonToDict;
+
+
+/**
+ utf8 encode
+
+ @return String
+ */
+- (nullable NSString*)tm_UTF8;
 
 @end
+
+NS_ASSUME_NONNULL_END

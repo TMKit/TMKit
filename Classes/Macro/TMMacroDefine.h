@@ -1,15 +1,15 @@
 //
 //  TMMacroDefine.h
-//  Pods
+//  TMKit
 //
 //  Created by Teemo on 20/06/2017.
-//
+//  MIT License
+//  Copyright (c) 2017 TMKit
 //
 
 #ifndef TMMacroDefine_h
 #define TMMacroDefine_h
 
-
-#define EXECUTE_BLOCK(A,...)            if(A != NULL) {A(__VA_ARGS__);}
+#define TM_EXECUTEBLOCK(A,...)            if(A != NULL) {A(__VA_ARGS__);}
 
 #endif /* TMMacroDefine_h */

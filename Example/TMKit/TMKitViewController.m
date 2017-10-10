@@ -7,10 +7,13 @@
 //
 
 #import "TMKitViewController.h"
-#import <TMKit/TMLogUtil.h>
+#import <TMKit/TMKit.h>
 
-@interface TMKitViewController ()
-
+@interface TMKitViewController ()<
+UITableViewDataSource,
+UITableViewDelegate>
+@property (nonatomic,strong) UITableView *mainTableView;
+@property (nonatomic,strong) NSArray *dataArray;
 @end
 
 @implementation TMKitViewController
@@ -18,13 +21,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    TMLog(@"12312");
+    self.title = @"TMKitDEMO";
+    self.mainTableView = [UITableView new];
+    self.mainTableView.delegate = self;
+    self.mainTableView.dataSource = self;
+    [self.mainTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    [self.view addSubview:self.mainTableView];
+    self.mainTableView.frame = self.view.bounds;
+    self.dataArray = @[@"Data",@"Date",@"DB",@"Log",@"String",@"UI",@"Version"];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
+    }
+    cell.textLabel.text = self.dataArray[indexPath.row];
+    return cell;
 }
 
 @end
