@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		64E83EDCCB13E12B7F520C53 /* Pods_TMKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584F5851B3E834CC5F217831 /* Pods_TMKit_Example.framework */; };
+		657D6B9B1F8CC8F700F7D2AE /* TTKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D6B9A1F8CC8F700F7D2AE /* TTKitViewController.swift */; };
 		675C032BFA536D6ABA932E97 /* Pods_TMKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A144B8927A651500D8572E /* Pods_TMKit_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
@@ -59,6 +60,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		657D6B991F8CC8F600F7D2AE /* TMKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		657D6B9A1F8CC8F700F7D2AE /* TTKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTKitViewController.swift; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73A144B8927A651500D8572E /* Pods_TMKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		782F78D8345A0A9E890E646A /* Pods-TMKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMKit_Tests/Pods-TMKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				657D6B9A1F8CC8F700F7D2AE /* TTKitViewController.swift */,
+				657D6B991F8CC8F600F7D2AE /* TMKit_Example-Bridging-Header.h */,
 			);
 			name = "Example for TMKit";
 			path = TMKit;
@@ -250,6 +255,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Teemo;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						LastSwiftMigration = 0900;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -397,6 +405,7 @@
 				6003F59E195388D20070C39A /* TMKitAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* TMKitViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				657D6B9B1F8CC8F700F7D2AE /* TTKitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,13 +543,18 @@
 			baseConfigurationReference = C084A5DAEFA7FD4F1DBF4544 /* Pods-TMKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMKit/TMKit-Prefix.pch";
 				INFOPLIST_FILE = "TMKit/TMKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMKit/TMKit_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -551,13 +565,17 @@
 			baseConfigurationReference = EE7F7471B456ED3A7ED244C6 /* Pods-TMKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMKit/TMKit-Prefix.pch";
 				INFOPLIST_FILE = "TMKit/TMKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMKit/TMKit_Example-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
