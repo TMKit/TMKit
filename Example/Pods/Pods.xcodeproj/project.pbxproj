@@ -7,66 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0245F071E9D41B7843F64FF05D8FCA1E /* TMOperationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 7414852FA5A46C1B869AAB4FFD47B485 /* TMOperationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02BC5746841529C9C69AFFBB93B640EE /* TMMacroDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F23479C3883341681F12AF10C20ED8 /* TMMacroDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		068182D00E6F95F010B3EB2B5B33F0C2 /* NSObject+TMDataValid.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CB55E965CB8E980FF53E7DF0949356 /* NSObject+TMDataValid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */; };
-		10A2DDA579BE61BB5F093DD5283E89D6 /* TMOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8CB354D432631BACD598CF184E5585 /* TMOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		165DA401EC8F035CACD2A77AB98F46CB /* UIView+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED96B3B0ECBA4AD6C1509F490084951 /* UIView+TMUtil.m */; };
-		1850411849E5E6F597B78FC5A242E097 /* NSData+TMEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E19F3B2BBF2C0B5B2489EB0BB63734 /* NSData+TMEncrypt.m */; };
+		0A5920C99D17DEB47572D862A106DDB3 /* TMLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D1B7848B37E797199B58BF991E86EE /* TMLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1358816F8F75B424140EB78F88A56D90 /* TMOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D67315E13A9D87168C8B6F061A0ACAC2 /* TMOperationQueue.m */; };
 		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
-		2AE87C80857BDFF509B3755695A94231 /* TMKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F19FEFDB8119B02E6FCDB4ED901B506A /* TMKit-dummy.m */; };
+		2C34991E014C96463B4812E3DE4F29B0 /* NSString+TMEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E08D65779C06DFD6795A6542803529 /* NSString+TMEncrypt.m */; };
 		2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31B190B0B68D749B27652B8DBE47578E /* UIColor+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A65C653B30EC7CA9B2DDFE08227DD809 /* UIColor+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309281BE4586A34A563FE8936FDEFE45 /* NSString+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 328445027B7DD9669A3FF18DA1F98DCB /* NSString+TMUtil.m */; };
+		332CFF3CBC30152D96FE22CC2E3A7C70 /* NSDate+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F57259F1A495333E3B5F405D17C48E9F /* NSDate+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		338F73E9E16112CD90C79551A1F50D4B /* UIView+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F28EEEDD0405E01A708921FF97D623 /* UIView+TMUtil.m */; };
 		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
+		3638E06B1A53C2EDF69FD0356C90DDDF /* UIColor+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E58FD2A01E24F2B7C906ED3484B19DBC /* UIColor+TMUtil.m */; };
+		379371FA0FCB0E9CA749CA35A23DC540 /* NSString+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 04547CA62D0E0E2BD7486CA28689477D /* NSString+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BCAB5F6B0AA8D8BB530D9228D158B23 /* TMKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F19FEFDB8119B02E6FCDB4ED901B506A /* TMKit-dummy.m */; };
+		3C5D49A0EAAE0F8A80BF4479AA01E082 /* TMVersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9566AF569E5F62DE15B4EFE13F9C73A5 /* TMVersionUtil.m */; };
 		3D11B6FF34BD4DBA4AFA60E5CF9E3DD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
 		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		454D1096C4DC0BB96249A898A3F79DCD /* TMOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C044D96AAD2DB36D426C41B833097E6C /* TMOperationGroup.m */; };
-		49BBFB8148D18DA002B368BFA11D7BAF /* NSString+TMEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7AA2B80EB0803018B5B9990D86658F /* NSString+TMEncrypt.m */; };
+		467766DC5090130C23519C459DE7B2AB /* NSData+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCE80800E0ECA30BD675D989F405A0 /* NSData+TMUtil.m */; };
+		49E928F0624512A12BCB998CEF9E0BA2 /* TMKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF7DE2C2625BA6B1C1E2DDD37362D96 /* TMKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BF3B16120886C400BF41CBF3FCCEF58 /* UIColor+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D8C9C04FD0C11A4E5E9B5E64FFF1B74 /* UIColor+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */; };
-		520F4755BB3220B886345C72995D758F /* NSString+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434E17C42B010ABC8B3124CDC7684ED /* NSString+TMUtil.m */; };
-		5735A90A2DC2039C45395739D05A5E76 /* TMMacroDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = C58C2EE8A9A9FD4824EAD502E3BAA9C0 /* TMMacroDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A08B1834C936FD9FFE7DB1CA31B207A /* TMOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 389C988EA4AD85BCBF65503C34C5618B /* TMOperationQueue.m */; };
+		59E1415C589E79D5D3CDED7CA6BD71A1 /* TMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EF7D5A66DBB6E36E3AD5855DC0B568 /* TMLog.m */; };
+		5E6682A3312078F318BEDB71CF105D38 /* TMOperationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F558EA63102E601E8DBB1FB1100DB464 /* TMOperationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6799255C9BDE2A0E0855BDA4AEE8DAE4 /* Pods-TMKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD13B0A2AB3779435F2D61156E6E5E2 /* Pods-TMKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
-		6C413B3D74E188DECA1D5A5782A6F0E7 /* NSData+TMEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F9CF55D8B98922E7F65A65F532A7483 /* NSData+TMEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E0536F45C2DA4605A768B491BBCB6D6 /* TMVersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A5715299FB880AD938CB0BE2FA0B9045 /* TMVersionUtil.m */; };
-		6E7FF0FCFD6AB4DA1BADE0A575F1109F /* NSObject+TMDataValid.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BABC098E2EF258AF42FF133F0080672 /* NSObject+TMDataValid.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70657191F4D583B63EB13C3F2048014C /* NSDate+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E8CBC2A63FA24B5B9263804174E31 /* NSDate+TMUtil.m */; };
 		725C92F464E43C4232BCBC8EE735C372 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
 		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
-		75FAF70E93EF0FA062B8A85315688625 /* TMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B147DC85AE65EA347AD7F8B3EC258D7 /* TMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E9B14D5F8842A86CA86F2AF45230725 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F339250A1C3C5C5C5364254007103 /* XCTest.framework */; };
-		80930D8EA2C599A3E3D03E3CB0A18D06 /* NSObject+TMDataValid.m in Sources */ = {isa = PBXBuildFile; fileRef = E864B6EC421ADA328EEF87343F6B1DA0 /* NSObject+TMDataValid.m */; };
 		812B12009672AF7712DC39DA5D26CEB8 /* Pods-TMKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F45A48F1D8111218FA7FCBD000E660 /* Pods-TMKit_Example-dummy.m */; };
+		822026FA78CFC2B33321C7B53DE5A9F1 /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BFC00C86F8DE3B430ADD4E76D794F /* TMDiskCache.m */; };
 		841FF232C33C7D49C58CEFDBE7EEB92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA323C90663942983643D7A4D1F697C8 /* UIKit.framework */; };
-		85D756C6B66A95D3F1AC220B3D61CF6A /* UIView+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 53FEC09EB233CB6599B33E4EF03E3D2C /* UIView+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B6C88832E7156EF923B592257763625 /* TMVersionUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F69E524BF9A8789BA1450A68C1C872 /* TMVersionUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84463C74F5B2E29B566868D3CBD5DBAC /* TMDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E436E51887429F47C230DE1F1CA6E89 /* TMDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		891262AECDB93D0D3B188B6D32AF3635 /* NSObject+TMDataValid.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BF07D56FB476F2A0D4960824D38F96 /* NSObject+TMDataValid.m */; };
+		8C944B181583A399D654B5FEC195F33E /* TMUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA5007219C64F3F8FAC9290D958DBAD /* TMUserDefaults.m */; };
 		91D0138ACFAD733E4061F12E450C336C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
+		923CFA0C59F20536C87C90104A41AD6F /* NSData+TMEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE7ECC4BC94E7BEDFA65A139D0939B8 /* NSData+TMEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9604C24CDEFCA62540CC9CB92297D89B /* TMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6ED3B8A18A847B618B95814C169CAA /* TMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED573C7C1296FA50771BDE76B8FEC0E /* NSDate+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B6493ACEB317596D6F13426A004670E6 /* NSDate+TMUtil.m */; };
 		A20CE1E9F8FC51190AD531512693CE8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
+		A3F664C887A71A6AC7F10309431CDE25 /* NSString+TMEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FADC2F5FAAC5A63F9A1589638F153DB /* NSString+TMEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */; };
-		A81ACC58B7D1D24247810F9AF6398DA8 /* TMKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF7DE2C2625BA6B1C1E2DDD37362D96 /* TMKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8E39673B15F41E985EBAD2484FEA6FE /* NSString+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF74B82D946B9DF83D0B12B8645A0BB3 /* NSString+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF7FB272BC415E764FBA8B696152FB15 /* NSData+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2E35C84A4AB3DE8C61EBCD63DF9B43 /* NSData+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1606A9274E87A759BC691BC3E5A5D9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA323C90663942983643D7A4D1F697C8 /* UIKit.framework */; };
-		B1C9B8037B62EE9C9EB973BAE8BB410B /* TMUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = A8F2DF4175E25FEF4264D986A3BDF349 /* TMUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B27DFD6025D94758785918F1D6F6C060 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27810809BAD71E4022600B21251449F /* QuartzCore.framework */; };
-		B2C42E8F5DFB48A42AB015E4E98629E5 /* TMOperationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = E497DA42A1070E047292EA482018359C /* TMOperationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B55867B2E38E1D3CAB619EF1A9273450 /* NSData+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 422A2F404D7011D3FE09176A9F179586 /* NSData+TMUtil.m */; };
 		B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D037B3C804B9E1BB70538E342E5104 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */; };
+		BEFB0F8E391300FBDEDFE1266CAEABB4 /* UIView+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F25DCACC1938A11A09D73ECBFB8C06E4 /* UIView+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C67D95137B72F1686A65D44DD015B7A5 /* TMLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FF0A9503DAA1DD8C0C1D958A3B230A /* TMLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9B89736ED1F58934B22F9EB34F8C72D /* NSData+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A21B4F18D789958859C02CB7D58516 /* NSData+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA0B1867888A3C4280EFEFD8E5FF7BA9 /* Pods-TMKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4822AE4F4F526DA622A792BEABC2C8 /* Pods-TMKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CD2D9F7AF4C6DFB69080C4B251C28150 /* NSData+TMEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A366245EACD66B6DF5991541FAFEBDB7 /* NSData+TMEncrypt.m */; };
 		CF64D2EC13E8D91800B547024144A28D /* Pods-TMKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F80010CBAF13099B8A6F363EE9A639E6 /* Pods-TMKit_Tests-dummy.m */; };
+		D431DFB8D77971FF294076537CFFF358 /* TMUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = AB47EC0D96D34E53B2BF1657F7B6D9A7 /* TMUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
-		DE3FCBAEBC5E66D639EB24C6101568A1 /* TMOperationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 92703745E9F7B36C5524A8E1DA69572E /* TMOperationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7D0AF812B69341BDC2A6B63DE0E3ED3 /* NSString+TMEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E6B15A3682F3954A390CBBAF677A3E4 /* NSString+TMEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9456B79088161EF163178A125786CFC /* UIColor+TMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D85034395570C27BD73FCE235537D /* UIColor+TMUtil.m */; };
-		EDABC031D5841F66FB61DF86E6253C2A /* TMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 327C3E8687F9151ADC97FDD6E7DECFF7 /* TMLog.m */; };
-		EFB4CAE247C90BDAF282AE75CAAE2D08 /* NSDate+TMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 69C955534118432AD55B91E58FB72428 /* NSDate+TMUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F15CDDEA3FC1EC918FC015A853E112E2 /* TMUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = AE66B0C66D4E2B919FFB5D835E0F7A0E /* TMUserDefaults.m */; };
+		DC13E5ED8E412E61B0172BCC7341E6A9 /* TMVersionUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D735199310332E58DF2596797F7D4C0 /* TMVersionUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E11EE44876C6804FEFF5F97FBBA56FCF /* TMOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9D4C897F42B1EDD678B44111A71A2D /* TMOperationGroup.m */; };
+		F0CD62A85D9BC0A6239C6DFD2544DC92 /* TMOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1669EF4FD8274BA2DD8B5A3BBC622673 /* TMOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F446142022CE904265211AD854ACFFEF /* TMCaching.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E00983F3F04E500EEB0760B4185E5C2 /* TMCaching.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,87 +93,90 @@
 		00E6EC308C8658BA1396030037F6AC9B /* Pods-TMKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TMKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		01AE4ADFFF4A51AA34B9FF6EBFCA2D79 /* TMKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TMKit-prefix.pch"; sourceTree = "<group>"; };
 		02A4976F449B066FF5B066C22EAE1878 /* Pods-TMKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TMKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		04547CA62D0E0E2BD7486CA28689477D /* NSString+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+TMUtil.h"; sourceTree = "<group>"; };
 		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		0A2E35C84A4AB3DE8C61EBCD63DF9B43 /* NSData+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+TMUtil.h"; sourceTree = "<group>"; };
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		13CB55E965CB8E980FF53E7DF0949356 /* NSObject+TMDataValid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+TMDataValid.h"; sourceTree = "<group>"; };
+		1669EF4FD8274BA2DD8B5A3BBC622673 /* TMOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMOperationQueue.h; sourceTree = "<group>"; };
+		18DCE80800E0ECA30BD675D989F405A0 /* NSData+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+TMUtil.m"; sourceTree = "<group>"; };
 		1A40D9C958C45C59206F805860A8F361 /* TMKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TMKit.modulemap; sourceTree = "<group>"; };
 		1ADBB897107879DA0627A876A97F3DCA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B147DC85AE65EA347AD7F8B3EC258D7 /* TMKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMKit.h; sourceTree = "<group>"; };
-		21E19F3B2BBF2C0B5B2489EB0BB63734 /* NSData+TMEncrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+TMEncrypt.m"; sourceTree = "<group>"; };
+		1BE7ECC4BC94E7BEDFA65A139D0939B8 /* NSData+TMEncrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+TMEncrypt.h"; sourceTree = "<group>"; };
 		21F03B52B3DEB1F8B3764CD7866F103B /* Pods-TMKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TMKit_Example.modulemap"; sourceTree = "<group>"; };
 		29791EB103001299F7530D748072088C /* Pods_TMKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TMKit_Example.framework; path = "Pods-TMKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E6B15A3682F3954A390CBBAF677A3E4 /* NSString+TMEncrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+TMEncrypt.h"; sourceTree = "<group>"; };
+		2D735199310332E58DF2596797F7D4C0 /* TMVersionUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMVersionUtil.h; sourceTree = "<group>"; };
+		2E436E51887429F47C230DE1F1CA6E89 /* TMDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMDiskCache.h; sourceTree = "<group>"; };
 		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		327C3E8687F9151ADC97FDD6E7DECFF7 /* TMLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMLog.m; sourceTree = "<group>"; };
-		389C988EA4AD85BCBF65503C34C5618B /* TMOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMOperationQueue.m; sourceTree = "<group>"; };
+		328445027B7DD9669A3FF18DA1F98DCB /* NSString+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+TMUtil.m"; sourceTree = "<group>"; };
+		32E08D65779C06DFD6795A6542803529 /* NSString+TMEncrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+TMEncrypt.m"; sourceTree = "<group>"; };
 		39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		3A8F339250A1C3C5C5C5364254007103 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		3B7AA2B80EB0803018B5B9990D86658F /* NSString+TMEncrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+TMEncrypt.m"; sourceTree = "<group>"; };
 		3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		422A2F404D7011D3FE09176A9F179586 /* NSData+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+TMUtil.m"; sourceTree = "<group>"; };
 		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		4BABC098E2EF258AF42FF133F0080672 /* NSObject+TMDataValid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+TMDataValid.h"; sourceTree = "<group>"; };
-		4ED96B3B0ECBA4AD6C1509F490084951 /* UIView+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+TMUtil.m"; sourceTree = "<group>"; };
-		4F9CF55D8B98922E7F65A65F532A7483 /* NSData+TMEncrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+TMEncrypt.h"; sourceTree = "<group>"; };
+		4FADC2F5FAAC5A63F9A1589638F153DB /* NSString+TMEncrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+TMEncrypt.h"; sourceTree = "<group>"; };
 		52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		53FEC09EB233CB6599B33E4EF03E3D2C /* UIView+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+TMUtil.h"; sourceTree = "<group>"; };
 		5847423489D8AC2703152396108B650B /* Pods-TMKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		69C955534118432AD55B91E58FB72428 /* NSDate+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+TMUtil.h"; sourceTree = "<group>"; };
+		59F23479C3883341681F12AF10C20ED8 /* TMMacroDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMMacroDefine.h; sourceTree = "<group>"; };
+		60EF7D5A66DBB6E36E3AD5855DC0B568 /* TMLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMLog.m; sourceTree = "<group>"; };
 		6BD13B0A2AB3779435F2D61156E6E5E2 /* Pods-TMKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TMKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6C62E95C4012A952EFAC3DBBB255866B /* Pods-TMKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TMKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D8C9C04FD0C11A4E5E9B5E64FFF1B74 /* UIColor+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+TMUtil.h"; sourceTree = "<group>"; };
+		6E00983F3F04E500EEB0760B4185E5C2 /* TMCaching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMCaching.h; sourceTree = "<group>"; };
 		6E66B4218824CF8160D93713DDBEEA82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		710F0844A87226CB74E2E14B67B47903 /* Pods-TMKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMKit_Example-resources.sh"; sourceTree = "<group>"; };
 		73D037B3C804B9E1BB70538E342E5104 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		7414852FA5A46C1B869AAB4FFD47B485 /* TMOperationGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMOperationGroup.h; sourceTree = "<group>"; };
 		78E3AE8A3D82E91BB724ED100A82153D /* Pods-TMKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TMKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7A5D85034395570C27BD73FCE235537D /* UIColor+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TMUtil.m"; sourceTree = "<group>"; };
+		7A5BFC00C86F8DE3B430ADD4E76D794F /* TMDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMDiskCache.m; sourceTree = "<group>"; };
 		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		7E9D4C897F42B1EDD678B44111A71A2D /* TMOperationGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMOperationGroup.m; sourceTree = "<group>"; };
 		823558E8AC8EB39D028DB5FBBEA227A3 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		84F45A48F1D8111218FA7FCBD000E660 /* Pods-TMKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TMKit_Example-dummy.m"; sourceTree = "<group>"; };
 		8538DBDE1A2B75CFE660B80A09F24FB8 /* Pods-TMKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		92703745E9F7B36C5524A8E1DA69572E /* TMOperationGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMOperationGroup.h; sourceTree = "<group>"; };
+		88F28EEEDD0405E01A708921FF97D623 /* UIView+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+TMUtil.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9434E17C42B010ABC8B3124CDC7684ED /* NSString+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+TMUtil.m"; sourceTree = "<group>"; };
+		9566AF569E5F62DE15B4EFE13F9C73A5 /* TMVersionUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMVersionUtil.m; sourceTree = "<group>"; };
 		976140BE4E28476C27FC275C3670369F /* Pods-TMKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A0FF0A9503DAA1DD8C0C1D958A3B230A /* TMLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMLog.h; sourceTree = "<group>"; };
 		A27810809BAD71E4022600B21251449F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		A2F8B73592A627BE64ECFC45656BD26C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5715299FB880AD938CB0BE2FA0B9045 /* TMVersionUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMVersionUtil.m; sourceTree = "<group>"; };
-		A65C653B30EC7CA9B2DDFE08227DD809 /* UIColor+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+TMUtil.h"; sourceTree = "<group>"; };
-		A8F2DF4175E25FEF4264D986A3BDF349 /* TMUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMUserDefaults.h; sourceTree = "<group>"; };
+		A366245EACD66B6DF5991541FAFEBDB7 /* NSData+TMEncrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+TMEncrypt.m"; sourceTree = "<group>"; };
 		AA323C90663942983643D7A4D1F697C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		AE66B0C66D4E2B919FFB5D835E0F7A0E /* TMUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMUserDefaults.m; sourceTree = "<group>"; };
+		AB47EC0D96D34E53B2BF1657F7B6D9A7 /* TMUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMUserDefaults.h; sourceTree = "<group>"; };
 		B512031D14C580109C1D50B91CA5995F /* Pods-TMKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B5C41472406AB095BDEF536A14083EFF /* Pods_TMKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TMKit_Tests.framework; path = "Pods-TMKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6493ACEB317596D6F13426A004670E6 /* NSDate+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TMUtil.m"; sourceTree = "<group>"; };
 		B6904F55638BFBD130185ED2F0D9BC6A /* Pods-TMKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		B9DD215271A6DD7E6FF803A549814160 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6ED3B8A18A847B618B95814C169CAA /* TMKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMKit.h; sourceTree = "<group>"; };
 		BD4822AE4F4F526DA622A792BEABC2C8 /* Pods-TMKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TMKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		BF74B82D946B9DF83D0B12B8645A0BB3 /* NSString+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+TMUtil.h"; sourceTree = "<group>"; };
-		C044D96AAD2DB36D426C41B833097E6C /* TMOperationGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMOperationGroup.m; sourceTree = "<group>"; };
-		C58C2EE8A9A9FD4824EAD502E3BAA9C0 /* TMMacroDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMMacroDefine.h; sourceTree = "<group>"; };
+		BEA5007219C64F3F8FAC9290D958DBAD /* TMUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMUserDefaults.m; sourceTree = "<group>"; };
+		C0BF07D56FB476F2A0D4960824D38F96 /* NSObject+TMDataValid.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TMDataValid.m"; sourceTree = "<group>"; };
 		C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CAD1A5E2452B06630B787876D60BB686 /* Pods-TMKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		CAF9718018BCEF0247835168AC52CF5F /* Pods-TMKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CC12BCFA3FC0B8C307F5B38C673EDD12 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		D4F69E524BF9A8789BA1450A68C1C872 /* TMVersionUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMVersionUtil.h; sourceTree = "<group>"; };
+		D67315E13A9D87168C8B6F061A0ACAC2 /* TMOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TMOperationQueue.m; sourceTree = "<group>"; };
 		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		DADAF30F2D84FDAAD2ADD2D50C1F40DF /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
-		DC8CB354D432631BACD598CF184E5585 /* TMOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMOperationQueue.h; sourceTree = "<group>"; };
 		E23B2038A3D84D96F3CDCAF06A52D5B2 /* Pods-TMKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TMKit_Tests.modulemap"; sourceTree = "<group>"; };
 		E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		E497DA42A1070E047292EA482018359C /* TMOperationTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMOperationTypes.h; sourceTree = "<group>"; };
-		E864B6EC421ADA328EEF87343F6B1DA0 /* NSObject+TMDataValid.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TMDataValid.m"; sourceTree = "<group>"; };
+		E58FD2A01E24F2B7C906ED3484B19DBC /* UIColor+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TMUtil.m"; sourceTree = "<group>"; };
 		E93D0101E9C9FA4695E787CC66761462 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9AE1CD7C50467F0CB6483DC83056CCF /* TMKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TMKit.xcconfig; sourceTree = "<group>"; };
-		EE2E8CBC2A63FA24B5B9263804174E31 /* NSDate+TMUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TMUtil.m"; sourceTree = "<group>"; };
 		EEF7DE2C2625BA6B1C1E2DDD37362D96 /* TMKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TMKit-umbrella.h"; sourceTree = "<group>"; };
 		F0C3BAECEA6A1EBB6C5F4CAB96C3A680 /* TMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TMKit.framework; path = TMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D1B7848B37E797199B58BF991E86EE /* TMLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMLog.h; sourceTree = "<group>"; };
 		F19FEFDB8119B02E6FCDB4ED901B506A /* TMKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TMKit-dummy.m"; sourceTree = "<group>"; };
-		F4A21B4F18D789958859C02CB7D58516 /* NSData+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+TMUtil.h"; sourceTree = "<group>"; };
+		F25DCACC1938A11A09D73ECBFB8C06E4 /* UIView+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+TMUtil.h"; sourceTree = "<group>"; };
+		F558EA63102E601E8DBB1FB1100DB464 /* TMOperationTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TMOperationTypes.h; sourceTree = "<group>"; };
+		F57259F1A495333E3B5F405D17C48E9F /* NSDate+TMUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+TMUtil.h"; sourceTree = "<group>"; };
 		F80010CBAF13099B8A6F363EE9A639E6 /* Pods-TMKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TMKit_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,46 +220,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0454558452C3F4FBB240F03F07FB9050 /* Object */ = {
+		140EE45A837852DADAF3B2DE072AD6E8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				4BABC098E2EF258AF42FF133F0080672 /* NSObject+TMDataValid.h */,
-				E864B6EC421ADA328EEF87343F6B1DA0 /* NSObject+TMDataValid.m */,
+				6D8C9C04FD0C11A4E5E9B5E64FFF1B74 /* UIColor+TMUtil.h */,
+				E58FD2A01E24F2B7C906ED3484B19DBC /* UIColor+TMUtil.m */,
+				F25DCACC1938A11A09D73ECBFB8C06E4 /* UIView+TMUtil.h */,
+				88F28EEEDD0405E01A708921FF97D623 /* UIView+TMUtil.m */,
 			);
-			name = Object;
-			path = Object;
-			sourceTree = "<group>";
-		};
-		0C6F10F297191F0CB305298DD9341990 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1B147DC85AE65EA347AD7F8B3EC258D7 /* TMKit.h */,
-				827CB7801FAE90C5A3DB845398AF80A4 /* Data */,
-				240FE6F327BC92D8A70BDD65A9EE949B /* Date */,
-				DF6C7B431DEAB50428297A0322C2CFA3 /* DB */,
-				43452F2C2192FAA178133EAA27185ECA /* Log */,
-				7C1CFF90A3FCD94532F48FBCA82BF007 /* Macro */,
-				0454558452C3F4FBB240F03F07FB9050 /* Object */,
-				63281924D9FBD8E29C3B9D7067A95F76 /* String */,
-				0EA924DE0F89AF021DFE1EDD5396FF5A /* Thread */,
-				A3EC9FA93EB26BCE959F5919A0C03F06 /* Type */,
-				C308D3E0AB99B683624BC4EFD72146E3 /* UI */,
-				3D27EEA0E77EF74BBB5DF168E36167BE /* Version */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		0EA924DE0F89AF021DFE1EDD5396FF5A /* Thread */ = {
-			isa = PBXGroup;
-			children = (
-				92703745E9F7B36C5524A8E1DA69572E /* TMOperationGroup.h */,
-				C044D96AAD2DB36D426C41B833097E6C /* TMOperationGroup.m */,
-				DC8CB354D432631BACD598CF184E5585 /* TMOperationQueue.h */,
-				389C988EA4AD85BCBF65503C34C5618B /* TMOperationQueue.m */,
-			);
-			name = Thread;
-			path = Thread;
+			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
@@ -289,31 +265,11 @@
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
-		240FE6F327BC92D8A70BDD65A9EE949B /* Date */ = {
+		3653FB30F8A9793C7422DC8EE5B80007 /* Log */ = {
 			isa = PBXGroup;
 			children = (
-				69C955534118432AD55B91E58FB72428 /* NSDate+TMUtil.h */,
-				EE2E8CBC2A63FA24B5B9263804174E31 /* NSDate+TMUtil.m */,
-			);
-			name = Date;
-			path = Date;
-			sourceTree = "<group>";
-		};
-		3D27EEA0E77EF74BBB5DF168E36167BE /* Version */ = {
-			isa = PBXGroup;
-			children = (
-				D4F69E524BF9A8789BA1450A68C1C872 /* TMVersionUtil.h */,
-				A5715299FB880AD938CB0BE2FA0B9045 /* TMVersionUtil.m */,
-			);
-			name = Version;
-			path = Version;
-			sourceTree = "<group>";
-		};
-		43452F2C2192FAA178133EAA27185ECA /* Log */ = {
-			isa = PBXGroup;
-			children = (
-				A0FF0A9503DAA1DD8C0C1D958A3B230A /* TMLog.h */,
-				327C3E8687F9151ADC97FDD6E7DECFF7 /* TMLog.m */,
+				F0D1B7848B37E797199B58BF991E86EE /* TMLog.h */,
+				60EF7D5A66DBB6E36E3AD5855DC0B568 /* TMLog.m */,
 			);
 			name = Log;
 			path = Log;
@@ -335,6 +291,16 @@
 			);
 			name = "Pods-TMKit_Tests";
 			path = "Target Support Files/Pods-TMKit_Tests";
+			sourceTree = "<group>";
+		};
+		4FC39B07F8F5CCDDA3E0312CDDC1C6EE /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				13CB55E965CB8E980FF53E7DF0949356 /* NSObject+TMDataValid.h */,
+				C0BF07D56FB476F2A0D4960824D38F96 /* NSObject+TMDataValid.m */,
+			);
+			name = Object;
+			path = Object;
 			sourceTree = "<group>";
 		};
 		4FDB3A9BB013D994E99F7CBF6A48D36D /* Pods-TMKit_Example */ = {
@@ -363,22 +329,32 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		63281924D9FBD8E29C3B9D7067A95F76 /* String */ = {
+		5E7EB592AA83983BBE23D0FE84C3C24B /* String */ = {
 			isa = PBXGroup;
 			children = (
-				2E6B15A3682F3954A390CBBAF677A3E4 /* NSString+TMEncrypt.h */,
-				3B7AA2B80EB0803018B5B9990D86658F /* NSString+TMEncrypt.m */,
-				BF74B82D946B9DF83D0B12B8645A0BB3 /* NSString+TMUtil.h */,
-				9434E17C42B010ABC8B3124CDC7684ED /* NSString+TMUtil.m */,
+				4FADC2F5FAAC5A63F9A1589638F153DB /* NSString+TMEncrypt.h */,
+				32E08D65779C06DFD6795A6542803529 /* NSString+TMEncrypt.m */,
+				04547CA62D0E0E2BD7486CA28689477D /* NSString+TMUtil.h */,
+				328445027B7DD9669A3FF18DA1F98DCB /* NSString+TMUtil.m */,
 			);
 			name = String;
 			path = String;
 			sourceTree = "<group>";
 		};
-		7C1CFF90A3FCD94532F48FBCA82BF007 /* Macro */ = {
+		5FE0D163C61B2183AC4151B2F81623CF /* Date */ = {
 			isa = PBXGroup;
 			children = (
-				C58C2EE8A9A9FD4824EAD502E3BAA9C0 /* TMMacroDefine.h */,
+				F57259F1A495333E3B5F405D17C48E9F /* NSDate+TMUtil.h */,
+				B6493ACEB317596D6F13426A004670E6 /* NSDate+TMUtil.m */,
+			);
+			name = Date;
+			path = Date;
+			sourceTree = "<group>";
+		};
+		66BF629F64A10C64AB39334678987E6C /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				59F23479C3883341681F12AF10C20ED8 /* TMMacroDefine.h */,
 			);
 			name = Macro;
 			path = Macro;
@@ -396,16 +372,27 @@
 			);
 			sourceTree = "<group>";
 		};
-		827CB7801FAE90C5A3DB845398AF80A4 /* Data */ = {
+		817299FA88109B6F994DD963B14EE797 /* Version */ = {
 			isa = PBXGroup;
 			children = (
-				4F9CF55D8B98922E7F65A65F532A7483 /* NSData+TMEncrypt.h */,
-				21E19F3B2BBF2C0B5B2489EB0BB63734 /* NSData+TMEncrypt.m */,
-				F4A21B4F18D789958859C02CB7D58516 /* NSData+TMUtil.h */,
-				422A2F404D7011D3FE09176A9F179586 /* NSData+TMUtil.m */,
+				2D735199310332E58DF2596797F7D4C0 /* TMVersionUtil.h */,
+				9566AF569E5F62DE15B4EFE13F9C73A5 /* TMVersionUtil.m */,
 			);
-			name = Data;
-			path = Data;
+			name = Version;
+			path = Version;
+			sourceTree = "<group>";
+		};
+		88B957DECC96CAE48D2E4616B2821674 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				6E00983F3F04E500EEB0760B4185E5C2 /* TMCaching.h */,
+				2E436E51887429F47C230DE1F1CA6E89 /* TMDiskCache.h */,
+				7A5BFC00C86F8DE3B430ADD4E76D794F /* TMDiskCache.m */,
+				AB47EC0D96D34E53B2BF1657F7B6D9A7 /* TMUserDefaults.h */,
+				BEA5007219C64F3F8FAC9290D958DBAD /* TMUserDefaults.m */,
+			);
+			name = DB;
+			path = DB;
 			sourceTree = "<group>";
 		};
 		8D22B0D091B0427E43C82354D9CA8E06 /* iOS */ = {
@@ -438,10 +425,30 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		A3EC9FA93EB26BCE959F5919A0C03F06 /* Type */ = {
+		B49D19E0BB8863BC59552617753FAA97 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E497DA42A1070E047292EA482018359C /* TMOperationTypes.h */,
+				BB6ED3B8A18A847B618B95814C169CAA /* TMKit.h */,
+				D516E41A3CD4A27EA5257B344C5FB26D /* Data */,
+				5FE0D163C61B2183AC4151B2F81623CF /* Date */,
+				88B957DECC96CAE48D2E4616B2821674 /* DB */,
+				3653FB30F8A9793C7422DC8EE5B80007 /* Log */,
+				66BF629F64A10C64AB39334678987E6C /* Macro */,
+				4FC39B07F8F5CCDDA3E0312CDDC1C6EE /* Object */,
+				5E7EB592AA83983BBE23D0FE84C3C24B /* String */,
+				D540A6FBB3BD2B880002564F52FE422D /* Thread */,
+				B906B5F7E289A23D9B8FBBF4C317EB96 /* Type */,
+				140EE45A837852DADAF3B2DE072AD6E8 /* UI */,
+				817299FA88109B6F994DD963B14EE797 /* Version */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B906B5F7E289A23D9B8FBBF4C317EB96 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				F558EA63102E601E8DBB1FB1100DB464 /* TMOperationTypes.h */,
 			);
 			name = Type;
 			path = Type;
@@ -450,23 +457,35 @@
 		BE3B6F14346EBDC6B831BA8E4766878C /* TMKit */ = {
 			isa = PBXGroup;
 			children = (
-				0C6F10F297191F0CB305298DD9341990 /* Classes */,
+				B49D19E0BB8863BC59552617753FAA97 /* Classes */,
 				E04BB123AAF7F025E7AF4DC338D89999 /* Support Files */,
 			);
 			name = TMKit;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		C308D3E0AB99B683624BC4EFD72146E3 /* UI */ = {
+		D516E41A3CD4A27EA5257B344C5FB26D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				A65C653B30EC7CA9B2DDFE08227DD809 /* UIColor+TMUtil.h */,
-				7A5D85034395570C27BD73FCE235537D /* UIColor+TMUtil.m */,
-				53FEC09EB233CB6599B33E4EF03E3D2C /* UIView+TMUtil.h */,
-				4ED96B3B0ECBA4AD6C1509F490084951 /* UIView+TMUtil.m */,
+				1BE7ECC4BC94E7BEDFA65A139D0939B8 /* NSData+TMEncrypt.h */,
+				A366245EACD66B6DF5991541FAFEBDB7 /* NSData+TMEncrypt.m */,
+				0A2E35C84A4AB3DE8C61EBCD63DF9B43 /* NSData+TMUtil.h */,
+				18DCE80800E0ECA30BD675D989F405A0 /* NSData+TMUtil.m */,
 			);
-			name = UI;
-			path = UI;
+			name = Data;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D540A6FBB3BD2B880002564F52FE422D /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				7414852FA5A46C1B869AAB4FFD47B485 /* TMOperationGroup.h */,
+				7E9D4C897F42B1EDD678B44111A71A2D /* TMOperationGroup.m */,
+				1669EF4FD8274BA2DD8B5A3BBC622673 /* TMOperationQueue.h */,
+				D67315E13A9D87168C8B6F061A0ACAC2 /* TMOperationQueue.m */,
+			);
+			name = Thread;
+			path = Thread;
 			sourceTree = "<group>";
 		};
 		DCE31F9CDF43F91748800B7AEFA97FAB /* Targets Support Files */ = {
@@ -476,16 +495,6 @@
 				4F75F52391C9BC218C2C5D3E67F41890 /* Pods-TMKit_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DF6C7B431DEAB50428297A0322C2CFA3 /* DB */ = {
-			isa = PBXGroup;
-			children = (
-				A8F2DF4175E25FEF4264D986A3BDF349 /* TMUserDefaults.h */,
-				AE66B0C66D4E2B919FFB5D835E0F7A0E /* TMUserDefaults.m */,
-			);
-			name = DB;
-			path = DB;
 			sourceTree = "<group>";
 		};
 		E04BB123AAF7F025E7AF4DC338D89999 /* Support Files */ = {
@@ -534,27 +543,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		47D478E737521BF42FB1A519986A7DC4 /* Headers */ = {
+		6C4D6BAB33017AB5350C465C3841C2CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C413B3D74E188DECA1D5A5782A6F0E7 /* NSData+TMEncrypt.h in Headers */,
-				C9B89736ED1F58934B22F9EB34F8C72D /* NSData+TMUtil.h in Headers */,
-				EFB4CAE247C90BDAF282AE75CAAE2D08 /* NSDate+TMUtil.h in Headers */,
-				6E7FF0FCFD6AB4DA1BADE0A575F1109F /* NSObject+TMDataValid.h in Headers */,
-				E7D0AF812B69341BDC2A6B63DE0E3ED3 /* NSString+TMEncrypt.h in Headers */,
-				A8E39673B15F41E985EBAD2484FEA6FE /* NSString+TMUtil.h in Headers */,
-				A81ACC58B7D1D24247810F9AF6398DA8 /* TMKit-umbrella.h in Headers */,
-				75FAF70E93EF0FA062B8A85315688625 /* TMKit.h in Headers */,
-				C67D95137B72F1686A65D44DD015B7A5 /* TMLog.h in Headers */,
-				5735A90A2DC2039C45395739D05A5E76 /* TMMacroDefine.h in Headers */,
-				DE3FCBAEBC5E66D639EB24C6101568A1 /* TMOperationGroup.h in Headers */,
-				10A2DDA579BE61BB5F093DD5283E89D6 /* TMOperationQueue.h in Headers */,
-				B2C42E8F5DFB48A42AB015E4E98629E5 /* TMOperationTypes.h in Headers */,
-				B1C9B8037B62EE9C9EB973BAE8BB410B /* TMUserDefaults.h in Headers */,
-				8B6C88832E7156EF923B592257763625 /* TMVersionUtil.h in Headers */,
-				31B190B0B68D749B27652B8DBE47578E /* UIColor+TMUtil.h in Headers */,
-				85D756C6B66A95D3F1AC220B3D61CF6A /* UIView+TMUtil.h in Headers */,
+				923CFA0C59F20536C87C90104A41AD6F /* NSData+TMEncrypt.h in Headers */,
+				AF7FB272BC415E764FBA8B696152FB15 /* NSData+TMUtil.h in Headers */,
+				332CFF3CBC30152D96FE22CC2E3A7C70 /* NSDate+TMUtil.h in Headers */,
+				068182D00E6F95F010B3EB2B5B33F0C2 /* NSObject+TMDataValid.h in Headers */,
+				A3F664C887A71A6AC7F10309431CDE25 /* NSString+TMEncrypt.h in Headers */,
+				379371FA0FCB0E9CA749CA35A23DC540 /* NSString+TMUtil.h in Headers */,
+				F446142022CE904265211AD854ACFFEF /* TMCaching.h in Headers */,
+				84463C74F5B2E29B566868D3CBD5DBAC /* TMDiskCache.h in Headers */,
+				49E928F0624512A12BCB998CEF9E0BA2 /* TMKit-umbrella.h in Headers */,
+				9604C24CDEFCA62540CC9CB92297D89B /* TMKit.h in Headers */,
+				0A5920C99D17DEB47572D862A106DDB3 /* TMLog.h in Headers */,
+				02BC5746841529C9C69AFFBB93B640EE /* TMMacroDefine.h in Headers */,
+				0245F071E9D41B7843F64FF05D8FCA1E /* TMOperationGroup.h in Headers */,
+				F0CD62A85D9BC0A6239C6DFD2544DC92 /* TMOperationQueue.h in Headers */,
+				5E6682A3312078F318BEDB71CF105D38 /* TMOperationTypes.h in Headers */,
+				D431DFB8D77971FF294076537CFFF358 /* TMUserDefaults.h in Headers */,
+				DC13E5ED8E412E61B0172BCC7341E6A9 /* TMVersionUtil.h in Headers */,
+				4BF3B16120886C400BF41CBF3FCCEF58 /* UIColor+TMUtil.h in Headers */,
+				BEFB0F8E391300FBDEDFE1266CAEABB4 /* UIView+TMUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,9 +607,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2783333CB4138433A844EB2ACAD31314 /* Build configuration list for PBXNativeTarget "TMKit" */;
 			buildPhases = (
-				F063FEF81D6EB5C512F6C5F5A9D77FE6 /* Sources */,
+				1375EB3A099540D10A30B9979FD34B7D /* Sources */,
 				88FCB3EA4E75D41F88264DCD2B852A38 /* Frameworks */,
-				47D478E737521BF42FB1A519986A7DC4 /* Headers */,
+				6C4D6BAB33017AB5350C465C3841C2CD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -692,6 +703,28 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1375EB3A099540D10A30B9979FD34B7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2D9F7AF4C6DFB69080C4B251C28150 /* NSData+TMEncrypt.m in Sources */,
+				467766DC5090130C23519C459DE7B2AB /* NSData+TMUtil.m in Sources */,
+				9ED573C7C1296FA50771BDE76B8FEC0E /* NSDate+TMUtil.m in Sources */,
+				891262AECDB93D0D3B188B6D32AF3635 /* NSObject+TMDataValid.m in Sources */,
+				2C34991E014C96463B4812E3DE4F29B0 /* NSString+TMEncrypt.m in Sources */,
+				309281BE4586A34A563FE8936FDEFE45 /* NSString+TMUtil.m in Sources */,
+				822026FA78CFC2B33321C7B53DE5A9F1 /* TMDiskCache.m in Sources */,
+				3BCAB5F6B0AA8D8BB530D9228D158B23 /* TMKit-dummy.m in Sources */,
+				59E1415C589E79D5D3CDED7CA6BD71A1 /* TMLog.m in Sources */,
+				E11EE44876C6804FEFF5F97FBBA56FCF /* TMOperationGroup.m in Sources */,
+				1358816F8F75B424140EB78F88A56D90 /* TMOperationQueue.m in Sources */,
+				8C944B181583A399D654B5FEC195F33E /* TMUserDefaults.m in Sources */,
+				3C5D49A0EAAE0F8A80BF4479AA01E082 /* TMVersionUtil.m in Sources */,
+				3638E06B1A53C2EDF69FD0356C90DDDF /* UIColor+TMUtil.m in Sources */,
+				338F73E9E16112CD90C79551A1F50D4B /* UIView+TMUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1659749B7BF4354CC1575B7022D00DEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -721,27 +754,6 @@
 				69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */,
 				35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */,
 				756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F063FEF81D6EB5C512F6C5F5A9D77FE6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1850411849E5E6F597B78FC5A242E097 /* NSData+TMEncrypt.m in Sources */,
-				B55867B2E38E1D3CAB619EF1A9273450 /* NSData+TMUtil.m in Sources */,
-				70657191F4D583B63EB13C3F2048014C /* NSDate+TMUtil.m in Sources */,
-				80930D8EA2C599A3E3D03E3CB0A18D06 /* NSObject+TMDataValid.m in Sources */,
-				49BBFB8148D18DA002B368BFA11D7BAF /* NSString+TMEncrypt.m in Sources */,
-				520F4755BB3220B886345C72995D758F /* NSString+TMUtil.m in Sources */,
-				2AE87C80857BDFF509B3755695A94231 /* TMKit-dummy.m in Sources */,
-				EDABC031D5841F66FB61DF86E6253C2A /* TMLog.m in Sources */,
-				454D1096C4DC0BB96249A898A3F79DCD /* TMOperationGroup.m in Sources */,
-				5A08B1834C936FD9FFE7DB1CA31B207A /* TMOperationQueue.m in Sources */,
-				F15CDDEA3FC1EC918FC015A853E112E2 /* TMUserDefaults.m in Sources */,
-				6E0536F45C2DA4605A768B491BBCB6D6 /* TMVersionUtil.m in Sources */,
-				E9456B79088161EF163178A125786CFC /* UIColor+TMUtil.m in Sources */,
-				165DA401EC8F035CACD2A77AB98F46CB /* UIView+TMUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

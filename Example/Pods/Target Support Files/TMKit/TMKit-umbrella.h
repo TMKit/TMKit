@@ -13,6 +13,8 @@
 #import "NSData+TMEncrypt.h"
 #import "NSData+TMUtil.h"
 #import "NSDate+TMUtil.h"
+#import "TMCaching.h"
+#import "TMDiskCache.h"
 #import "TMUserDefaults.h"
 #import "TMLog.h"
 #import "TMMacroDefine.h"
