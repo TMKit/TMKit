@@ -18,11 +18,9 @@
     | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday;
     NSDateComponents *comps = [gregorian components:unitFlags fromDate:self];
     return comps;
-    
 }
 
 - (BOOL) tm_isToday{
-    
     NSDateComponents *today_comps = [[NSDate date] tm_getDateComponents];
     NSDateComponents *my_comps = [self tm_getDateComponents];
     if ( [today_comps year] == [my_comps year] &&
@@ -33,7 +31,6 @@
     else {
         return NO;
     }
-    
 }
 
 - (BOOL) tm_isYesterday{
@@ -70,6 +67,5 @@
         return NO;
     }
 }
-
 
 @end

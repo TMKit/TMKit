@@ -48,7 +48,6 @@
     return [NSData dataWithBytes:result length:CC_MD4_DIGEST_LENGTH];
 }
 
-
 - (NSString *)tm_MD5String {
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     CC_MD5(self.bytes, (CC_LONG)self.length, result);
