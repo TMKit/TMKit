@@ -1,13 +1,7 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - TMKit (0.2.1)
+  - TMKit (0.2.3)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - TMKit (from `../`)
 
 EXTERNAL SOURCES:
@@ -15,9 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  TMKit: 97487bea08bad2ca2efa7fa1ad67331537cd464e
+  TMKit: c830e6e59ad0209a3639d3c0ed2b347d66356b6e
 
-PODFILE CHECKSUM: a30489adaf46e52c87d8159a3bfc4a88f8e6cec0
+PODFILE CHECKSUM: 5714259fc932f0c8555a4961c20335104110a1b8
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

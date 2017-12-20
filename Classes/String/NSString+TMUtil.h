@@ -39,7 +39,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- trim the space  
+ convert timeInterval to String
+ 
+ @param timeInterval timeInterval
+ @param formatter  e.g   "yyyy-MM-dd HH:mm"
+ @return String
+ */
++ (NSString*)TM_toTimeInterval:(uint64_t)timeInterval formatter:(NSString*)formatter;
+
+/**
+ trim the while space
  e.g   " hello " = >  "hello"
 
  @return String

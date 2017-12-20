@@ -7,6 +7,6 @@ target 'TMKit_Example' do
   target 'TMKit_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
+#    pod 'FBSnapshotTestCase'
   end
 end

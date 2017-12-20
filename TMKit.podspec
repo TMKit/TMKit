@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TMKit'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = '  This library supports Objc&Swift, TMKit has many tools and methods for iOS development'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.source_files = 'Classes/**/*'
+# s.public_header_files = ["Classes/**/TMKit.h"]
   s.frameworks = 'UIKit'
 
   # s.resource_bundles = {
