@@ -1,5 +1,5 @@
 PODS:
-  - TMKit (0.2.2)
+  - TMKit (0.2.3)
 
 DEPENDENCIES:
   - TMKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TMKit: 600e8fbfa9cc1ade6103eb02fa7bdc966a329eb9
+  TMKit: c830e6e59ad0209a3639d3c0ed2b347d66356b6e
 
 PODFILE CHECKSUM: 5714259fc932f0c8555a4961c20335104110a1b8
 
