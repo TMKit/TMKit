@@ -12,7 +12,6 @@
 
 @implementation NSString (TMUtil)
 
-
 + ( NSString*)tm_base64Encoded:(NSString*)string
 {
     NSData *data = [NSData tm_dataWithBase64EncodedString:string];
@@ -22,7 +21,6 @@
     }
     return nil;
 }
-
 
 - (NSString* )tm_trim{
     return [self stringByTrimmingCharactersInSet:
@@ -38,7 +36,15 @@
     return [[retStr stringByReplacingOccurrencesOfString:@"-" withString:@""] lowercaseString];
 }
 
--(NSDictionary*)tm_jsonToDict{
++ (NSString*)TM_toTimeInterval:(uint64_t)timeInterval formatter:(NSString*)formatter{
+    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = formatter;
+    NSDate * date = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    NSString * dateStr = [dateFormatter stringFromDate:date];
+    return dateStr;
+}
+
+- (NSDictionary*)tm_jsonToDict{
     NSData *jsonData = [self dataUsingEncoding:NSUTF8StringEncoding];
     NSObject *object = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
     return (NSDictionary*)object;
