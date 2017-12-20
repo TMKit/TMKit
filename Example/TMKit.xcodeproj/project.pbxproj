@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* TMOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* TMOperationQueueTests.m */; };
 		64E83EDCCB13E12B7F520C53 /* Pods_TMKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584F5851B3E834CC5F217831 /* Pods_TMKit_Example.framework */; };
+		655181C51F94A04700E8B1BF /* TMCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 655181C41F94A04700E8B1BF /* TMCacheTests.m */; };
 		657D6B9B1F8CC8F700F7D2AE /* TTKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D6B9A1F8CC8F700F7D2AE /* TTKitViewController.swift */; };
 		65C0E01C1F8F683500D17FCA /* TMOperationGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C0E01B1F8F683500D17FCA /* TMOperationGroupTests.m */; };
 		675C032BFA536D6ABA932E97 /* Pods_TMKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A144B8927A651500D8572E /* Pods_TMKit_Tests.framework */; };
@@ -61,6 +62,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* TMOperationQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMOperationQueueTests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		655181C41F94A04700E8B1BF /* TMCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCacheTests.m; sourceTree = "<group>"; };
 		657D6B991F8CC8F600F7D2AE /* TMKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		657D6B9A1F8CC8F700F7D2AE /* TTKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTKitViewController.swift; sourceTree = "<group>"; };
 		65C0E01B1F8F683500D17FCA /* TMOperationGroupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMOperationGroupTests.m; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				655181C41F94A04700E8B1BF /* TMCacheTests.m */,
 				65C0E01B1F8F683500D17FCA /* TMOperationGroupTests.m */,
 				6003F5BB195388D20070C39A /* TMOperationQueueTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
@@ -417,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C0E01C1F8F683500D17FCA /* TMOperationGroupTests.m in Sources */,
+				655181C51F94A04700E8B1BF /* TMCacheTests.m in Sources */,
 				6003F5BC195388D20070C39A /* TMOperationQueueTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

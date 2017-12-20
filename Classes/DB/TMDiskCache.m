@@ -5,23 +5,20 @@
 //  Created by Teemo on 16/10/2017.
 //
 
+
+#import <UIKit/UIKit.h>
+#import <pthread.h>
+#import <TMKit/TMOperationQueue.h>
+#import <TMKit/TMLog.h>
 #import "TMDiskCache.h"
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_4_0
-#import <UIKit/UIKit.h>
-#endif
-
-#import <pthread.h>
-
-#import <TMKit/TMOperationQueue.h>
-
-#define TMDiskCacheError(error) if (error) { NSLog(@"%@ (%d) ERROR: %@", \
+#define TMDiskCacheError(error) if (error) { TMLogError(@"%@ (%d) ERROR: %@", \
 [[NSString stringWithUTF8String:__FILE__] lastPathComponent], \
 __LINE__, [error localizedDescription]); }
 
 #define TMDiskCacheException(exception) if (exception) { NSAssert(NO, [exception reason]); }
 
-NSString * const TMDiskCachePrefix = @"com.pinterest.PINDiskCache";
+NSString * const TMDiskCachePrefix = @"com.TMKit.TMDiskCache";
 static NSString * const TMDiskCacheSharedName = @"TMDiskCacheShared";
 
 static NSString * const TMDiskCacheOperationIdentifierTrimToDate = @"TMDiskCacheOperationIdentifierTrimToDate";
@@ -93,14 +90,14 @@ static NSURL *_sharedTrashURL;
 - (void)dealloc
 {
     __unused int result = pthread_mutex_destroy(&_mutex);
-    NSCAssert(result == 0, @"Failed to destroy lock in PINMemoryCache %p. Code: %d", (void *)self, result);
+    NSCAssert(result == 0, @"Failed to destroy lock in TMMemoryCache %p. Code: %d", (void *)self, result);
     pthread_cond_destroy(&_diskWritableCondition);
     pthread_cond_destroy(&_diskStateKnownCondition);
 }
 
 - (instancetype)init
 {
-    @throw [NSException exceptionWithName:@"Must initialize with a name" reason:@"PINDiskCache must be initialized with a name. Call initWithName: instead." userInfo:nil];
+    @throw [NSException exceptionWithName:@"Must initialize with a name" reason:@"TMDiskCache must be initialized with a name. Call initWithName: instead." userInfo:nil];
     return [self initWithName:@""];
 }
 
@@ -116,18 +113,7 @@ static NSURL *_sharedTrashURL;
 
 - (instancetype)initWithName:(NSString *)name rootPath:(NSString *)rootPath serializer:(TMDiskCacheSerializerBlock)serializer deserializer:(TMDiskCacheDeserializerBlock)deserializer
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    return [self initWithName:name rootPath:rootPath serializer:serializer deserializer:deserializer operationQueue:[TMOperationQueue sharedOperationQueue]];
-#pragma clang diagnostic pop
-}
-
-- (instancetype)initWithName:(NSString *)name
-                    rootPath:(NSString *)rootPath
-                  serializer:(TMDiskCacheSerializerBlock)serializer
-                deserializer:(TMDiskCacheDeserializerBlock)deserializer
-              operationQueue:(TMOperationQueue *)operationQueue
-{
+    
     return [self initWithName:name
                        prefix:TMDiskCachePrefix
                      rootPath:rootPath
@@ -135,8 +121,9 @@ static NSURL *_sharedTrashURL;
                  deserializer:deserializer
                    keyEncoder:nil
                    keyDecoder:nil
-               operationQueue:operationQueue];
+               operationQueue:[TMOperationQueue sharedOperationQueue]];
 }
+
 
 - (instancetype)initWithName:(NSString *)name
                       prefix:(NSString *)prefix
@@ -152,14 +139,14 @@ static NSURL *_sharedTrashURL;
     
     
     NSAssert(((!serializer && !deserializer) || (serializer && deserializer)),
-             @"PINDiskCache must be initialized with a serializer AND deserializer.");
+             @"TMDiskCache must be initialized with a serializer AND deserializer.");
     
     NSAssert(((!keyEncoder && !keyDecoder) || (keyEncoder && keyDecoder)),
-             @"PINDiskCache must be initialized with a encoder AND decoder.");
+             @"TMDiskCache must be initialized with a encoder AND decoder.");
     
     if (self = [super init]) {
         __unused int result = pthread_mutex_init(&_mutex, NULL);
-        NSAssert(result == 0, @"Failed to init lock in PINMemoryCache %@. Code: %d", self, result);
+        NSAssert(result == 0, @"Failed to init lock in TMMemoryCache %@. Code: %d", self, result);
         
         _name = [name copy];
         _prefix = [prefix copy];
@@ -178,9 +165,8 @@ static NSURL *_sharedTrashURL;
         // 30 days by default
         _ageLimit = 60 * 60 * 24 * 30;
         
-#if TARGET_OS_IPHONE
         _writingProtectionOption = NSDataWritingFileProtectionNone;
-#endif
+
         
         _metadata = [[NSMutableDictionary alloc] init];
         _diskStateKnown = NO;
@@ -301,23 +287,8 @@ static NSURL *_sharedTrashURL;
         if (![decodedKey length]) {
             return @"";
         }
-        
-        if (@available(macOS 10.9, iOS 7.0, tvOS 9.0, watchOS 2.0, *)) {
-            NSString *encodedString = [decodedKey stringByAddingPercentEncodingWithAllowedCharacters:[[NSCharacterSet characterSetWithCharactersInString:@".:/%"] invertedSet]];
-            return encodedString;
-        } else {
-            CFStringRef static const charsToEscape = CFSTR(".:/%");
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            CFStringRef escapedString = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-                                                                                (__bridge CFStringRef)decodedKey,
-                                                                                NULL,
-                                                                                charsToEscape,
-                                                                                kCFStringEncodingUTF8);
-#pragma clang diagnostic pop
-            
-            return (__bridge_transfer NSString *)escapedString;
-        }
+        NSString *encodedString = [decodedKey stringByAddingPercentEncodingWithAllowedCharacters:[[NSCharacterSet characterSetWithCharactersInString:@".:/%"] invertedSet]];
+        return encodedString;
     };
 }
 
@@ -327,19 +298,7 @@ static NSURL *_sharedTrashURL;
         if (![encodedKey length]) {
             return @"";
         }
-        
-        if (@available(macOS 10.9, iOS 7.0, tvOS 9.0, watchOS 2.0, *)) {
-            return [encodedKey stringByRemovingPercentEncoding];
-        } else {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            CFStringRef unescapedString = CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault,
-                                                                                                  (__bridge CFStringRef)encodedKey,
-                                                                                                  CFSTR(""),
-                                                                                                  kCFStringEncodingUTF8);
-#pragma clang diagnostic pop
-            return (__bridge_transfer NSString *)unescapedString;
-        }
+        return [encodedKey stringByRemovingPercentEncoding];
     };
 }
 
@@ -973,12 +932,8 @@ static NSURL *_sharedTrashURL;
     if (!key || !object)
         return;
     
-#if TARGET_OS_IPHONE
     NSDataWritingOptions writeOptions = NSDataWritingAtomic | self.writingProtectionOption;
-#else
-    NSDataWritingOptions writeOptions = NSDataWritingAtomic;
-#endif
-    
+
     // Remain unlocked here so that we're not locked while serializing.
     NSData *data = _serializer(object, key);
     NSURL *fileURL = nil;
@@ -1340,7 +1295,7 @@ static NSURL *_sharedTrashURL;
     } withPriority:TMOperationQueuePriorityHigh];
 }
 
-#if TARGET_OS_IPHONE
+
 - (NSDataWritingOptions)writingProtectionOption {
     NSDataWritingOptions option;
     
@@ -1360,7 +1315,7 @@ static NSURL *_sharedTrashURL;
         [self unlock];
     } withPriority:TMOperationQueuePriorityHigh];
 }
-#endif
+
 
 - (void)lockForWriting
 {
@@ -1385,13 +1340,13 @@ static NSURL *_sharedTrashURL;
 - (void)lock
 {
     __unused int result = pthread_mutex_lock(&_mutex);
-    NSAssert(result == 0, @"Failed to lock PINDiskCache %@. Code: %d", self, result);
+    NSAssert(result == 0, @"Failed to lock TMDiskCache %@. Code: %d", self, result);
 }
 
 - (void)unlock
 {
     __unused int result = pthread_mutex_unlock(&_mutex);
-    NSAssert(result == 0, @"Failed to unlock PINDiskCache %@. Code: %d", self, result);
+    NSAssert(result == 0, @"Failed to unlock TMDiskCache %@. Code: %d", self, result);
 }
 
 @end

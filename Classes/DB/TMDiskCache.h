@@ -78,13 +78,13 @@ typedef NSString *_Nonnull(^TMDiskCacheKeyDecoderBlock)(NSString *encodedKey);
 
 
 /**
- `PINDiskCache` is a thread safe key/value store backed by the file system. It accepts any object conforming
+ `TMDiskCache` is a thread safe key/value store backed by the file system. It accepts any object conforming
  to the `NSCoding` protocol, which includes the basic Foundation data types and collection classes and also
  many UIKit classes, notably `UIImage`. All work is performed on a serial queue shared by all instances in
  the app, and archiving is handled by `NSKeyedArchiver`. This is a particular advantage for `UIImage` because
  it skips `UIImagePNGRepresentation()` and retains information like scale and orientation.
  
- The designated initializer for `PINDiskCache` is <initWithName:>. The <name> string is used to create a directory
+ The designated initializer for `TMDiskCache` is <initWithName:>. The <name> string is used to create a directory
  under Library/Caches that scopes disk access for this instance. Multiple instances with the same name are *not*
  allowed as they would conflict with each other.
  
@@ -92,8 +92,8 @@ typedef NSString *_Nonnull(^TMDiskCacheKeyDecoderBlock)(NSString *encodedKey);
  will cause the queue to wait, making it safe to access and manipulate the actual cache files on disk for the
  duration of the block.
  
- Because this cache is bound by disk I/O it can be much slower than <PINMemoryCache>, although values stored in
- `PINDiskCache` persist after application relaunch. Using <PINCache> is recommended over using `PINDiskCache`
+ Because this cache is bound by disk I/O it can be much slower than <TMMemoryCache>, although values stored in
+ `TMDiskCache` persist after application relaunch. Using <TMCache> is recommended over using `TMDiskCache`
  by itself, as it adds a fast layer of additional memory caching while still writing to disk.
  
  All access to the cache is dated so the that the least-used objects can be trimmed first. Setting an optional
@@ -122,7 +122,7 @@ TM_SUBCLASSING_RESTRICTED
 @property (readonly) NSString *prefix;
 
 /**
- The URL of the directory used by this cache, usually `Library/Caches/com.pinterest.PINDiskCache.(name)`
+ The URL of the directory used by this cache, usually `Library/Caches/com.TMKit.TMDiskCache.(name)`
  
  @warning Do not interact with files under this URL except in <lockFileAccessWhileExecutingBlock:> or
  <synchronouslyLockFileAccessWhileExecutingBlock:>.
@@ -141,7 +141,7 @@ TM_SUBCLASSING_RESTRICTED
  
  __block NSUInteger byteCount = 0;
  
- [_diskCache synchronouslyLockFileAccessWhileExecutingBlock:^(PINDiskCache *diskCache) {
+ [_diskCache synchronouslyLockFileAccessWhileExecutingBlock:^(TMDiskCache *diskCache) {
  byteCount = diskCache.byteCount;
  }];
  */
@@ -170,11 +170,9 @@ TM_SUBCLASSING_RESTRICTED
  @warning Only new files are affected by the new writing protection. If you need all files to be affected,
  you'll have to purge and set the objects back to the cache
  
- Only available on iOS
  */
-#if TARGET_OS_IPHONE
+
 @property (assign) NSDataWritingOptions writingProtectionOption;
-#endif
 
 /**
  If ttlCache is YES, the cache behaves like a ttlCache. This means that once an object enters the
@@ -269,31 +267,20 @@ TM_SUBCLASSING_RESTRICTED
  */
 - (instancetype)initWithName:(nonnull NSString *)name rootPath:(nonnull NSString *)rootPath serializer:(nullable TMDiskCacheSerializerBlock)serializer deserializer:(nullable TMDiskCacheDeserializerBlock)deserializer;
 
-/**
- The designated initializer allowing you to override default NSKeyedArchiver/NSKeyedUnarchiver serialization.
- 
- @see name
- @param name The name of the cache.
- @param rootPath The path of the cache.
- @param serializer   A block used to serialize object. If nil provided, default NSKeyedArchiver serialized will be used.
- @param deserializer A block used to deserialize object. If nil provided, default NSKeyedUnarchiver serialized will be used.
- @param operationQueue A PINOperationQueue to run asynchronous operations
- @result A new cache with the specified name.
- */
-- (instancetype)initWithName:(nonnull NSString *)name rootPath:(nonnull NSString *)rootPath serializer:(nullable TMDiskCacheSerializerBlock)serializer deserializer:(nullable TMDiskCacheDeserializerBlock)deserializer operationQueue:(nonnull TMOperationQueue *)operationQueue __attribute__((deprecated));
+
 
 /**
  The designated initializer allowing you to override default NSKeyedArchiver/NSKeyedUnarchiver serialization.
  
  @see name
  @param name The name of the cache.
- @param prefix The prefix for the cache name. Defaults to com.pinterest.PINDiskCache
+ @param prefix The prefix for the cache name. Defaults to com.TMKit.TMDiskCache
  @param rootPath The path of the cache.
  @param serializer   A block used to serialize object. If nil provided, default NSKeyedArchiver serialized will be used.
  @param deserializer A block used to deserialize object. If nil provided, default NSKeyedUnarchiver serialized will be used.
  @param keyEncoder A block used to encode key(filename). If nil provided, default url encoder will be used
  @param keyDecoder A block used to decode key(filename). If nil provided, default url decoder will be used
- @param operationQueue A PINOperationQueue to run asynchronous operations
+ @param operationQueue A TMOperationQueue to run asynchronous operations
  @result A new cache with the specified name.
  */
 - (instancetype)initWithName:(nonnull NSString *)name
@@ -332,7 +319,7 @@ TM_SUBCLASSING_RESTRICTED
  @warning Access is protected for the duration of the block, but to maintain safe disk access do not
  access this fileURL after the block has ended.
  
- @warning The PINDiskCache lock is held while block is executed. Any synchronous calls to the diskcache
+ @warning The TMDiskCache lock is held while block is executed. Any synchronous calls to the diskcache
  or a cache which owns the instance of the disk cache are likely to cause a deadlock. This is why the block is
  *not* passed the instance of the disk cache. You should also avoid doing extensive work while this
  lock is held.
@@ -401,7 +388,7 @@ TM_SUBCLASSING_RESTRICTED
  @param block A block to be executed for every object in the cache.
  @param completionBlock An optional block to be executed after the enumeration is complete.
  
- @warning The PINDiskCache lock is held while block is executed. Any synchronous calls to the diskcache
+ @warning The TMDiskCache lock is held while block is executed. Any synchronous calls to the diskcache
  or a cache which owns the instance of the disk cache are likely to cause a deadlock. This is why the block is
  *not* passed the instance of the disk cache. You should also avoid doing extensive work while this
  lock is held.
@@ -482,7 +469,7 @@ TM_SUBCLASSING_RESTRICTED
  @warning Do not call this method within the event blocks (<didRemoveObjectBlock>, etc.)
  Instead use the asynchronous version, <enumerateObjectsWithBlock:completionBlock:>.
  
- @warning The PINDiskCache lock is held while block is executed. Any synchronous calls to the diskcache
+ @warning The TMDiskCache lock is held while block is executed. Any synchronous calls to the diskcache
  or a cache which owns the instance of the disk cache are likely to cause a deadlock. This is why the block is
  *not* passed the instance of the disk cache. You should also avoid doing extensive work while this
  lock is held.

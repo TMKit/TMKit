@@ -18,6 +18,7 @@
 #import <TMKit/TMLog.h>
 #import <TMKit/TMVersionUtil.h>
 #import <TMKit/TMUserDefaults.h>
+#import <TMKit/TMDiskCache.h>
 //=============Thread=============
 #import <TMKit/TMOperationGroup.h>
 #import <TMKit/TMOperationQueue.h>
